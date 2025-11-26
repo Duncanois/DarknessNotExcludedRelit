@@ -36,7 +36,7 @@ namespace DarknessNotIncluded
       Add(MinionLightType.JetSuit, new LightConfig(true, 800, 5, 0, LightShape.Pill, LIGHT2D.LIGHT_YELLOW));
       Add(MinionLightType.LeadSuit, new LightConfig(true, 400, 3, 0, LightShape.Pill, LIGHT2D.LIGHT_YELLOW));
       Add(MinionLightType.Rover, new LightConfig(true, 1400, 6, 9, LightShape.DirectedCone, Color.white));
-      Add(MinionLightType.Bionic, new LightConfig(true, 1200, 5, 8, LightShape.Pill, Color.cyan)); // Example config
+      Add(MinionLightType.Bionic, new LightConfig(true, 400, 4, 0, LightShape.Pill, Color.cyan)); // Example config
     }
 
     public MinionLightingConfig DeepClone()

@@ -21,7 +21,7 @@ namespace DarknessNotIncluded
       { MinionLightType.JetSuit, "Jet Suit" },
       { MinionLightType.LeadSuit, "Lead Suit" },
       { MinionLightType.Rover, "Rover" },
-      { MinionLightType.Bionic, "Base Glow" },
+      { MinionLightType.Bionic, "Bionic Base Glow" },
     };
 
     static Dictionary<MinionLightType, string> TOOLTIPS = new Dictionary<MinionLightType, string>()

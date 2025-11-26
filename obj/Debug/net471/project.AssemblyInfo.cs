@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DarknessNotExcluded.mod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.4.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.4.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.4.0+a5bab6551348eb82a726704b51ddc3681549cd95")]
 [assembly: System.Reflection.AssemblyProductAttribute("DarknessNotExcluded.mod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DarknessNotExcluded.mod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.4.0.0")]

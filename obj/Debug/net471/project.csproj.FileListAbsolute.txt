@@ -121,6 +121,7 @@ C:\Users\dunca\OneDrive\Documents\Game Mods\Oxygen Not Included\DarknessNotExclu
 C:\Users\dunca\OneDrive\Documents\Game Mods\Oxygen Not Included\DarknessNotExcludedRelit\obj\Debug\net471\project.AssemblyInfoInputs.cache
 C:\Users\dunca\OneDrive\Documents\Game Mods\Oxygen Not Included\DarknessNotExcludedRelit\obj\Debug\net471\project.AssemblyInfo.cs
 C:\Users\dunca\OneDrive\Documents\Game Mods\Oxygen Not Included\DarknessNotExcludedRelit\obj\Debug\net471\project.csproj.CoreCompileInputs.cache
+C:\Users\dunca\OneDrive\Documents\Game Mods\Oxygen Not Included\DarknessNotExcludedRelit\obj\Debug\net471\project.sourcelink.json
 C:\Users\dunca\OneDrive\Documents\Game Mods\Oxygen Not Included\DarknessNotExcludedRelit\obj\Debug\net471\project.csproj.Up2Date
 C:\Users\dunca\OneDrive\Documents\Game Mods\Oxygen Not Included\DarknessNotExcludedRelit\obj\Debug\net471\DarknessNotExcluded.mod.dll
 C:\Users\dunca\OneDrive\Documents\Game Mods\Oxygen Not Included\DarknessNotExcludedRelit\obj\Debug\net471\DarknessNotExcluded.mod.pdb
