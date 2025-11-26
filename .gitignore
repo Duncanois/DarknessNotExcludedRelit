@@ -1,0 +1,5 @@
+# Ignore Visual Studio temporary files and workspace
+.vs/
+
+# Ignore Visual Studio Code workspace settings and extensions
+.vscode/

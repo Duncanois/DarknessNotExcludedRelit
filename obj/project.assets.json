@@ -1,0 +1,214 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.1": {
+      "ILMerge/3.0.41": {
+        "type": "package",
+        "build": {
+          "build/ILMerge.props": {}
+        }
+      },
+      "ILRepack/2.0.44": {
+        "type": "package",
+        "build": {
+          "build/ILRepack.props": {}
+        }
+      },
+      "Newtonsoft.Json/7.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "PLib/4.19.0": {
+        "type": "package",
+        "compile": {
+          "lib/net471/PLib.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net471/PLib.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ILMerge/3.0.41": {
+      "sha512": "u9n45xs40bSGoNFcmMYJkh3zkGYKR4BqzQaX2uHc2Ay4drdiQOTeo/1ECps3ttDXOu4Q6qbTnsIbQWb/06ShqA==",
+      "type": "package",
+      "path": "ilmerge/3.0.41",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/ILMerge.props",
+        "docs/ilmerge-manual.md",
+        "ilmerge.3.0.41.nupkg.sha512",
+        "ilmerge.nuspec",
+        "tools/net452/ILMerge.exe",
+        "tools/net452/System.Compiler.dll"
+      ]
+    },
+    "ILRepack/2.0.44": {
+      "sha512": "vK2Ts2gWPqKTzcrE8wnCiRLv/tiRAxqeuc7ha5ZJaKEIgPaoX7jBN6GKLE0ELieMhzXnONiRWvKhSyfCzSkCmQ==",
+      "type": "package",
+      "path": "ilrepack/2.0.44",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ILRepack.png",
+        "README.md",
+        "build/ILRepack.props",
+        "ilrepack.2.0.44.nupkg.sha512",
+        "ilrepack.nuspec",
+        "tools/ILRepack.exe",
+        "tools/ILRepack.runtimeconfig.json"
+      ]
+    },
+    "Newtonsoft.Json/7.0.1": {
+      "sha512": "q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
+      "type": "package",
+      "path": "newtonsoft.json/7.0.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
+        "newtonsoft.json.7.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "PLib/4.19.0": {
+      "sha512": "935WQeJdIGlnBIgp5+zSiY88mgWDJEgpJzmr45Aqmx8AsEiJJCPF1pXH+EFucMNpaBzebMnihLOG8zKFiuHxUQ==",
+      "type": "package",
+      "path": "plib/4.19.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net471/PLib.dll",
+        "lib/net471/PLib.xml",
+        "lib/netstandard2.1/PLib.dll",
+        "lib/netstandard2.1/PLib.xml",
+        "plib.4.19.0.nupkg.sha512",
+        "plib.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.1": [
+      "ILRepack >= 2.0.44",
+      "Newtonsoft.Json >= 7.0.1",
+      "PLib >= 4.19.0",
+      "ilmerge >= 3.0.41"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\dunca\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.4.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\dunca\\OneDrive\\Documents\\Game Mods\\Oxygen Not Included\\DarknessNotExcludedRelit\\project.csproj",
+      "projectName": "DarknessNotExcluded.mod",
+      "projectPath": "C:\\Users\\dunca\\OneDrive\\Documents\\Game Mods\\Oxygen Not Included\\DarknessNotExcludedRelit\\project.csproj",
+      "packagesPath": "C:\\Users\\dunca\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dunca\\OneDrive\\Documents\\Game Mods\\Oxygen Not Included\\DarknessNotExcludedRelit\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\dunca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net471"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net471": {
+          "targetAlias": "net471",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net471": {
+        "targetAlias": "net471",
+        "dependencies": {
+          "ILRepack": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.0.44, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[7.0.1, )"
+          },
+          "PLib": {
+            "target": "Package",
+            "version": "[4.19.0, )"
+          },
+          "ilmerge": {
+            "target": "Package",
+            "version": "[3.0.41, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Newtonsoft.Json' 7.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.1"
+      ]
+    }
+  ]
+}

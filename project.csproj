@@ -1,0 +1,107 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <BaseName>DarknessNotExcluded</BaseName>
+    <Version>1.4.0</Version>
+    <MinSupportedGameBuild>999999</MinSupportedGameBuild>
+    <AssemblyVersion>$(Version).0</AssemblyVersion>
+    <TargetFramework>net471</TargetFramework>
+    <RootNamespace>$(BaseName)</RootNamespace>
+    <AssemblyName>$(BaseName).mod</AssemblyName>
+    <NoWarn>CS0649</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('OSX'))">
+    <GameLibsDir>$(HOME)/Library/Application Support/Steam/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/Managed</GameLibsDir>
+    <LocalModsDir>$(HOME)/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Local</LocalModsDir>
+    <ILRepack>mono $(ILRepack)</ILRepack>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
+    <GameLibsDir>E:\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed</GameLibsDir>
+    <LocalModsDir>$(UserProfile)\Documents\Klei\OxygenNotIncluded\mods\Local</LocalModsDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <BundleDir>$(MSBuildProjectDirectory)\bundle</BundleDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ilmerge" Version="3.0.41" />
+    <PackageReference Include="ILRepack" Version="2.0.44">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="7.0.1" />
+    <PackageReference Include="PLib" Version="4.19.0" />
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+
+    <Reference Include="System" />
+
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="Merge" AfterTargets="Build">
+    <ItemGroup>
+      <InputAssemblies Include="$(OutDir)$(AssemblyName).dll" />
+      <InputAssemblies Include="$(OutDir)PLib.dll" />
+    </ItemGroup>
+    <ItemGroup>
+      <LibraryPath Include="$(GameLibsDir)" />
+    </ItemGroup>
+    <!-- Pass each lib path separately -->
+    <Exec Command="$(ILRepack) /internalize /lib:$(GameLibsDir) /lib:$(OutDir) /out:$(OutDir)$(BaseName).dll $(OutDir)$(AssemblyName).dll $(OutDir)PLib.dll" />
+  </Target>
+
+  <Target Name="Bundle" AfterTargets="Merge">
+    <RemoveDir Directories="$(BundleDir)" />
+    <Copy SourceFiles="$(OutDir)$(BaseName).dll" DestinationFolder="$(BundleDir)" />
+    <Copy SourceFiles="mod.yaml" DestinationFolder="$(BundleDir)" />
+    <Copy SourceFiles="assets/square-192.png" DestinationFiles="$(BundleDir)\preview.png" />
+    <PropertyGroup>
+      <ModInfo>supportedContent: ALL
+minimumSupportedBuild: $(MinSupportedGameBuild)
+version: $(Version)
+APIVersion: 2</ModInfo>
+    </PropertyGroup>
+    <WriteLinesToFile File="$(BundleDir)/mod_info.yaml" Lines="$(ModInfo)" Overwrite="true" />
+  </Target>
+
+  <Target Name="Install" AfterTargets="Bundle">
+    <ItemGroup>
+      <Bundle Include="$(BundleDir)\**\*" />
+    </ItemGroup>
+    <RemoveDir Directories="$(LocalModsDir)\$(BaseName)" />
+    <Copy SourceFiles="@(Bundle)" DestinationFolder="$(LocalModsDir)\$(BaseName)" />
+  </Target>
+
+</Project>
