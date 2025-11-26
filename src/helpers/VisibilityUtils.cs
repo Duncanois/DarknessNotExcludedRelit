@@ -1,40 +1,115 @@
-using HarmonyLib;
 using System;
-using DarknessNotIncluded; // needed for VisibilityUtils
+using System.Collections.Generic;
 
-namespace DarknessNotIncluded.Exploration
+namespace DarknessNotIncluded
 {
-  public static class DynamicGridVisibility
+  public static class VisibilityUtils
   {
-    public static void SetRadius(this GridVisibility gridVisibility, int radius)
+    // Bresenham line generator (cells inclusive)
+    public static IEnumerable<int> CellsOnLine(int x0, int y0, int x1, int y1)
     {
-      radius = Math.Max(1, radius);
+      int dx = Math.Abs(x1 - x0);
+      int dy = -Math.Abs(y1 - y0);
+      int sx = x0 < x1 ? 1 : -1;
+      int sy = y0 < y1 ? 1 : -1;
+      int err = dx + dy;
+      int x = x0;
+      int y = y0;
 
-      if (radius == gridVisibility.radius) return;
-      gridVisibility.radius = radius;
-      gridVisibility.innerRadius = (float)gridVisibility.radius * 0.7f;
+      while (true)
+      {
+        yield return Grid.XYToCell(x, y);
+        if (x == x1 && y == y1) yield break;
+        int e2 = 2 * err;
+        if (e2 >= dy)
+        {
+          err += dy;
+          x += sx;
+        }
+        if (e2 <= dx)
+        {
+          err += dx;
+          y += sy;
+        }
+      }
     }
 
-    [HarmonyPatch(typeof(GridVisibility)), HarmonyPatch("OnCellChange")]
-    static class Patched_GridVisibility_OnCellChange
+    // Lightweight blocking test: solids and common building object on foundation layer
+    public static bool IsBlockingCell(int cell)
     {
-      static bool Prefix(GridVisibility __instance)
+      if (!Grid.IsValidCell(cell)) return false;
+
+      // If the user disabled occlusion, nothing blocks visibility.
+      try
       {
-        if (__instance == null) return false;
-        if (__instance.gameObject == null) return false;
-        if (__instance.gameObject.HasTag(GameTags.Dead)) return false;
+        var cfg = Config.instance;
+        if (cfg != null && !cfg.occludeVisibilityByWalls)
+          return false;
+      }
+      catch
+      {
+        // If config isn't available, default to blocking behaviour.
+      }
 
-        var cell = Grid.PosToCell(__instance);
-        if (!Grid.IsValidCell(cell)) return false;
+      if (Grid.Solid[cell]) return true;
 
-        int x;
-        int y;
-        Grid.PosToXY(__instance.transform.GetPosition(), out x, out y);
+      // Extra guard for building-type blockers
+      var obj = Grid.Objects[cell, (int)ObjectLayer.Building];
+      if (obj != null) return true;
 
-        // Use LOS-aware reveal so walls/objects can occlude when enabled.
-        VisibilityUtils.RevealWithLineOfSight(cell, __instance.radius);
+      return false;
+    }
 
-        return false;
+    // Reveal cells from origin with LOS; blocked cells are only revealed if already lit or visible.
+    public static void RevealWithLineOfSight(int origin, int radius)
+    {
+      if (!Grid.IsValidCell(origin)) return;
+
+      var originXY = Grid.CellToXY(origin);
+      int ox = originXY.x;
+      int oy = originXY.y;
+
+      int r = Math.Max(1, radius);
+      int minx = Math.Max(0, ox - r);
+      int maxx = Math.Min(Grid.WidthInCells - 1, ox + r);
+      int miny = Math.Max(0, oy - r);
+      int maxy = Math.Min(Grid.HeightInCells - 1, oy + r);
+
+      for (int y = miny; y <= maxy; y++)
+      {
+        for (int x = minx; x <= maxx; x++)
+        {
+          int cell = Grid.XYToCell(x, y);
+          if (!Grid.IsValidCell(cell)) continue;
+          if (cell == origin) continue;
+          if (Math.Abs(x - ox) + Math.Abs(y - oy) <= 1) continue; // immediate neighbours handled elsewhere
+          if (x - ox == 0 && y - oy == 0) continue;
+          if ((x - ox) * (x - ox) + (y - oy) * (y - oy) > radius * radius) continue;
+
+          bool blocked = false;
+          foreach (int stepCell in CellsOnLine(ox, oy, x, y))
+          {
+            if (stepCell == origin) continue;
+            if (stepCell == cell) break;
+            if (IsBlockingCell(stepCell))
+            {
+              blocked = true;
+              break;
+            }
+          }
+
+          if (blocked)
+          {
+            if (Grid.LightIntensity[cell] > 0 || Grid.Visible[cell] > 0 || Grid.ExposedToSunlight[cell] > 0)
+            {
+              Grid.Reveal(cell);
+            }
+          }
+          else
+          {
+            Grid.Reveal(cell);
+          }
+        }
       }
     }
   }

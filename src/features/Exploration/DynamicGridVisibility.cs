@@ -3,11 +3,12 @@ using System;
 
 namespace DarknessNotIncluded.Exploration
 {
-  public static class DynamicGridVisibility
+  // Renamed to avoid duplicate class name collisions if an old copy still exists.
+  public static class GridVisibilityExtensions
   {
     public static void SetRadius(this GridVisibility gridVisibility, int radius)
     {
-      if (gridVisibility == null) return; // null-safe: preview/minion select can lack component
+      if (gridVisibility == null) return;
       radius = Math.Max(1, radius);
 
       if (radius == gridVisibility.radius) return;
@@ -27,8 +28,8 @@ namespace DarknessNotIncluded.Exploration
         var cell = Grid.PosToCell(__instance);
         if (!Grid.IsValidCell(cell)) return false;
 
-        int x;
-        int y;
+        // Keep existing reveal logic (replace with LOS reveal later if desired)
+        int x, y;
         Grid.PosToXY(__instance.transform.GetPosition(), out x, out y);
         GridVisibility.Reveal(x, y, __instance.radius, __instance.innerRadius);
 
