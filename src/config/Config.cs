@@ -4,8 +4,11 @@ using KMod;
 using Newtonsoft.Json;
 using PeterHan.PLib;
 using PeterHan.PLib.Options;
+using PeterHan.PLib.UI;
 using System;
 using System.Collections.Generic;
+using UnityEngine;
+using Klei; // add this
 
 namespace DarknessNotIncluded
 {
@@ -36,7 +39,7 @@ namespace DarknessNotIncluded
     [Limit(0, 255)]
     public int minimumFogLevel { get; set; }
 
-    [Option("Occlude visibility by walls", "Hide tiles from implied light/line of sight when blocked by solid tiles.", "Darkness")]
+    [Option("Block visibility through walls", "Hides tiles/cells from line of sight when blocked by solid tiles.", "Darkness")]
     public bool occludeVisibilityByWalls { get; set; }
 
     // Exploration
@@ -245,6 +248,31 @@ namespace DarknessNotIncluded
       static void Prefix()
       {
         Config.instance = POptions.ReadSettings<Config>();
+      }
+    }
+
+    public static void ShowRestartPrompt()
+    {
+      try
+      {
+        var parent = Global.Instance != null ? Global.Instance.globalCanvas?.gameObject : null;
+        if (parent != null)
+        {
+          Manager.Dialog(
+            parent,
+            "Restart Required",
+            "Some changes will only take effect after restarting the game."
+          );
+        }
+        else
+        {
+          Debug.Log("[Darkness Not Excluded] Restart Required: Some changes will only take effect after restarting the game.");
+        }
+      }
+      catch (Exception ex)
+      {
+        Debug.Log($"[Darkness Not Excluded] Failed to open dialog. {ex}");
+        Debug.Log("[Darkness Not Excluded] Restart Required: Some changes will only take effect after restarting the game.");
       }
     }
   }
