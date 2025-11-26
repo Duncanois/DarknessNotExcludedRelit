@@ -61,9 +61,12 @@ namespace DarknessNotIncluded.DuplicantLights
         var lightType = GetActiveLightType(minionLightingConfig);
         var lightConfig = minionLightingConfig.Get(lightType);
 
-        // Simple circular reveal only
+        // Simple circular reveal only (respect config via RevealArea)
         if (gridVisibility != null)
+        {
           gridVisibility.SetRadius(lightConfig.reveal);
+          VisibilityUtils.RevealArea(Grid.PosToCell(gameObject), gridVisibility.radius, gridVisibility.innerRadius);
+        }
 
         if (disableLightsInBedrooms && lightType != MinionLightType.None)
         {

@@ -39,7 +39,7 @@ namespace DarknessNotIncluded
     {
       if (!Grid.IsValidCell(cell)) return false;
 
-      // If the user disabled occlusion, nothing blocks visibility.
+      // Respect config; if occlusion disabled, nothing blocks
       try
       {
         var cfg = Config.instance;
@@ -60,7 +60,7 @@ namespace DarknessNotIncluded
       return false;
     }
 
-    // Reveal cells from origin with LOS; blocked cells are only revealed if already lit or visible.
+    // LOS-aware reveal. Blocked cells are only revealed if already lit/visible/sunlight.
     public static void RevealWithLineOfSight(int origin, int radius)
     {
       if (!Grid.IsValidCell(origin)) return;
@@ -75,6 +75,13 @@ namespace DarknessNotIncluded
       int miny = Math.Max(0, oy - r);
       int maxy = Math.Min(Grid.HeightInCells - 1, oy + r);
 
+      // reveal origin and immediate orthogonals for QoL
+      Grid.Reveal(origin);
+      RevealIfValid(Grid.CellAbove(origin));
+      RevealIfValid(Grid.CellRight(origin));
+      RevealIfValid(Grid.CellBelow(origin));
+      RevealIfValid(Grid.CellLeft(origin));
+
       for (int y = miny; y <= maxy; y++)
       {
         for (int x = minx; x <= maxx; x++)
@@ -82,9 +89,10 @@ namespace DarknessNotIncluded
           int cell = Grid.XYToCell(x, y);
           if (!Grid.IsValidCell(cell)) continue;
           if (cell == origin) continue;
-          if (Math.Abs(x - ox) + Math.Abs(y - oy) <= 1) continue; // immediate neighbours handled elsewhere
-          if (x - ox == 0 && y - oy == 0) continue;
-          if ((x - ox) * (x - ox) + (y - oy) * (y - oy) > radius * radius) continue;
+          // Skip immediate neighbours (handled above)
+          if (Math.Abs(x - ox) + Math.Abs(y - oy) == 1) continue;
+          // circular radius check
+          if ((x - ox) * (x - ox) + (y - oy) * (y - oy) > r * r) continue;
 
           bool blocked = false;
           foreach (int stepCell in CellsOnLine(ox, oy, x, y))
@@ -100,16 +108,43 @@ namespace DarknessNotIncluded
 
           if (blocked)
           {
+            // if already known/illuminated reveal; otherwise keep hidden
             if (Grid.LightIntensity[cell] > 0 || Grid.Visible[cell] > 0 || Grid.ExposedToSunlight[cell] > 0)
-            {
               Grid.Reveal(cell);
-            }
           }
           else
           {
             Grid.Reveal(cell);
           }
         }
+      }
+
+      void RevealIfValid(int c)
+      {
+        if (Grid.IsValidCell(c)) Grid.Reveal(c);
+      }
+    }
+
+    // Choose LOS-aware reveal or vanilla circular reveal based on config.
+    public static void RevealArea(int originCell, int radius, float innerRadius)
+    {
+      if (!Grid.IsValidCell(originCell)) return;
+
+      bool occlusionEnabled = false;
+      try
+      {
+        occlusionEnabled = Config.instance != null && Config.instance.occludeVisibilityByWalls;
+      }
+      catch { }
+
+      if (occlusionEnabled)
+      {
+        RevealWithLineOfSight(originCell, radius);
+      }
+      else
+      {
+        var xy = Grid.CellToXY(originCell);
+        GridVisibility.Reveal(xy.x, xy.y, radius, innerRadius);
       }
     }
   }

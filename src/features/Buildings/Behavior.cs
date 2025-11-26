@@ -2,6 +2,7 @@ using System;
 using HarmonyLib;
 using UnityEngine;
 using System.Collections.Generic;
+using DarknessNotIncluded; // for VisibilityUtils
 
 namespace DarknessNotIncluded.Exploration
 {
@@ -30,10 +31,12 @@ namespace DarknessNotIncluded.Exploration
 
           // TODO: offset to center of building and increase radius by building 
           // size.
-          gridVisibility.SetRadius(Math.Max(0, lightConfig.reveal - 1)); // gridVisibility.SetRadius(lightConfig.reveal);
-            if (gridVisibility.isSpawned)
+          gridVisibility.SetRadius(Math.Max(0, lightConfig.reveal - 1));
+
+          if (gridVisibility.isSpawned)
           {
-            Traverse.Create(gridVisibility).Method("OnCellChange").GetValue();
+            // Use LOS-aware reveal logic when configured; otherwise vanilla reveal.
+            VisibilityUtils.RevealArea(Grid.PosToCell(gameObject), gridVisibility.radius, gridVisibility.innerRadius);
           }
         });
       }

@@ -1,9 +1,9 @@
 using HarmonyLib;
 using System;
+using DarknessNotIncluded;
 
 namespace DarknessNotIncluded.Exploration
 {
-  // Renamed to avoid duplicate class name collisions if an old copy still exists.
   public static class GridVisibilityExtensions
   {
     public static void SetRadius(this GridVisibility gridVisibility, int radius)
@@ -25,15 +25,13 @@ namespace DarknessNotIncluded.Exploration
         if (__instance.gameObject == null) return false;
         if (__instance.gameObject.HasTag(GameTags.Dead)) return false;
 
-        var cell = Grid.PosToCell(__instance);
-        if (!Grid.IsValidCell(cell)) return false;
+        var originCell = Grid.PosToCell(__instance);
+        if (!Grid.IsValidCell(originCell)) return false;
 
-        // Keep existing reveal logic (replace with LOS reveal later if desired)
-        int x, y;
-        Grid.PosToXY(__instance.transform.GetPosition(), out x, out y);
-        GridVisibility.Reveal(x, y, __instance.radius, __instance.innerRadius);
+        // LOS-aware reveal when occlusion is enabled, otherwise fallback to vanilla.
+        VisibilityUtils.RevealArea(originCell, __instance.radius, __instance.innerRadius);
 
-        return false;
+        return false; // skip original
       }
     }
   }

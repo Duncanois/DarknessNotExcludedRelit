@@ -145,7 +145,7 @@ namespace DarknessNotIncluded
       gracePeriodCycles = 3.0f;
       initialFogLevel = 200;
       minimumFogLevel = 35;
-      occludeVisibilityByWalls = true;
+      occludeVisibilityByWalls = false;
 
       // Exploration
       dragToolIgnoresVisibility = true;
