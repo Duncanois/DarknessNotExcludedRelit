@@ -15,7 +15,8 @@ namespace DarknessNotIncluded
   [JsonObject(MemberSerialization.OptOut)]
   [ModInfo("https://github.com/nevir/oni-darkness-not-excluded", "preview.png")]
   [ConfigFile(SharedConfigLocation: true)]
-  public class Config
+  [RestartRequired]
+    public class Config
   {
     // Darkness
 
