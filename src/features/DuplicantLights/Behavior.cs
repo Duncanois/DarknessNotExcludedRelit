@@ -34,6 +34,9 @@ namespace DarknessNotIncluded.DuplicantLights
 
         Light = gameObject.AddComponent<Light2D>();
 
+        // Ensure GridVisibility exists on all units (including preview/minion select)
+        gridVisibility = gameObject.AddOrGet<GridVisibility>();
+
         Config.ObserveFor(this, (config) =>
         {
           UpdateLights(true);
@@ -59,7 +62,8 @@ namespace DarknessNotIncluded.DuplicantLights
         var lightConfig = minionLightingConfig.Get(lightType);
 
         // Simple circular reveal only
-        gridVisibility.SetRadius(lightConfig.reveal);
+        if (gridVisibility != null)
+          gridVisibility.SetRadius(lightConfig.reveal);
 
         if (disableLightsInBedrooms && lightType != MinionLightType.None)
         {

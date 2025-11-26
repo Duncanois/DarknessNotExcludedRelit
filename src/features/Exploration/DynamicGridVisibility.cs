@@ -7,6 +7,7 @@ namespace DarknessNotIncluded.Exploration
   {
     public static void SetRadius(this GridVisibility gridVisibility, int radius)
     {
+      if (gridVisibility == null) return; // null-safe: preview/minion select can lack component
       radius = Math.Max(1, radius);
 
       if (radius == gridVisibility.radius) return;
