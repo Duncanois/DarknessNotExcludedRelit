@@ -131,6 +131,9 @@ namespace DarknessNotIncluded
 
     static void CastSmoothCircle(IDictionary<int, float> brightness, int range, int sourceCell)
     {
+      if (!Grid.IsValidCell(sourceCell))
+        return;
+
       var octants = new OctantBuilder(brightness, sourceCell)
       {
         Falloff = 0.5f,

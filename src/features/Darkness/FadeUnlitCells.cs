@@ -78,14 +78,6 @@ namespace DarknessNotIncluded.Darkness
             else
             {
               var lux = Behavior.ActualOrImpliedLightLevel(cell);
-
-              // Fully black for unlit cells: if computed lux is 0, hide the cell.
-              if (lux <= 0)
-              {
-                region.SetBytes(x, y, (byte)0);
-                continue;
-              }
-
               int fog = minFogLevel + (Math.Min(lux, fullyVisibleLuxThreshold) * fogRange) / fullyVisibleLuxThreshold;
               region.SetBytes(x, y, Math.Min((byte)fog, visible[cell]));
             }
