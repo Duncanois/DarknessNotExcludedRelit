@@ -1,5 +1,8 @@
-# Ignore Visual Studio temporary files and workspace
-.vs/
+# OS-Specific Junk
+.DS_Store
 
-# Ignore Visual Studio Code workspace settings and extensions
-.vscode/
+/bin/
+/obj/
+/.vs/
+/*.user
+*.suo
