@@ -1,5 +1,6 @@
 using HarmonyLib;
 using System;
+using UnityEngine;
 
 namespace DarknessNotIncluded.Darkness
 {
@@ -79,6 +80,7 @@ namespace DarknessNotIncluded.Darkness
             {
               var lux = Behavior.ActualOrImpliedLightLevel(cell);
 
+              lux = Mathf.Max( lux, 200 );
               // Fully black for unlit cells: if computed lux is 0, hide the cell.
               if (lux <= 0)
               {
