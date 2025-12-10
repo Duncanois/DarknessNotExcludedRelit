@@ -78,11 +78,11 @@ namespace DarknessNotIncluded.DuplicantLights
 
         if (disableLightsInLitAreas && lightType != MinionLightType.None)
         {
-          var headCell = Grid.CellAbove(Grid.PosToCell(gameObject));
-          var headLux = Grid.IsValidCell(headCell) ? Grid.LightIntensity[headCell] : 0;
+          var cell = Grid.PosToCell(gameObject);
+          var cellLux = Grid.IsValidCell(cell) ? Grid.LightIntensity[cell] : 0;
 
           var dupeLux = Light.enabled ? Light.Lux : 0;
-          var baseCellLux = Math.Max(0, headLux - dupeLux);
+          var baseCellLux = Math.Max(0, cellLux - dupeLux);
           var targetLux = lightConfig.lux;
           if (lightType == MinionLightType.Intrinsic) targetLux *= 2;
 
