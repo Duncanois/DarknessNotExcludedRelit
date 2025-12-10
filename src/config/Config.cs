@@ -93,7 +93,7 @@ namespace DarknessNotIncluded
     [Option("Disable lights around sleeping dupes", "Whether dupes should turn their lights off when entering a bedroom.", "Duplicant Lights")]
     public bool disableDupeLightsInBedrooms { get; set; }
 
-    [Option("Disable lights in lit areas", "Whether dupes should turn their lights off when entering an area with at least the same level of brightness as their light.", "Duplicant Lights")]
+    [Option("Disable lights in lit areas", "Whether dupes should turn their lights off when entering an area with level of brightness sufficient for the Lit Workspace bonus.", "Duplicant Lights")]
     public bool disableDupeLightsInLitAreas { get; set; }
 
     [DynamicOption(typeof(MinionLightingConfigEntry), "Duplicant Lights")]

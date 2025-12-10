@@ -10,6 +10,7 @@ namespace DarknessNotIncluded.DuplicantLights
     {
       private static bool disableLightsInBedrooms;
       private static bool disableLightsInLitAreas;
+      private static int litWorkspaceLux;
       private static MinionLightingConfig minionLightingConfig;
       private static bool occludeVisibilityByWalls;
 
@@ -17,6 +18,7 @@ namespace DarknessNotIncluded.DuplicantLights
       {
         disableLightsInBedrooms = config.disableDupeLightsInBedrooms;
         disableLightsInLitAreas = config.disableDupeLightsInLitAreas;
+        litWorkspaceLux = config.litWorkspaceLux;
         minionLightingConfig = config.minionLightingConfig;
         occludeVisibilityByWalls = config.occludeVisibilityByWalls;
       });
@@ -83,8 +85,7 @@ namespace DarknessNotIncluded.DuplicantLights
 
           var dupeLux = Light.enabled ? Light.Lux : 0;
           var baseCellLux = Math.Max(0, cellLux - dupeLux);
-          var targetLux = lightConfig.lux;
-          if (lightType == MinionLightType.Intrinsic) targetLux *= 2;
+          var targetLux = litWorkspaceLux;
 
           if (baseCellLux >= targetLux)
           {
