@@ -1,107 +1,33 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <BaseName>DarknessNotExcluded</BaseName>
-    <Version>1.4.0</Version>
-    <MinSupportedGameBuild>999999</MinSupportedGameBuild>
-    <AssemblyVersion>$(Version).0</AssemblyVersion>
-    <TargetFramework>net471</TargetFramework>
-    <RootNamespace>$(BaseName)</RootNamespace>
-    <AssemblyName>$(BaseName).mod</AssemblyName>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>DarknessNotExcluded.mod</AssemblyName>
+    <RootNamespace>DarknessNotExcluded</RootNamespace>
+    <Version>1.4.1</Version>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GameLibsDir Condition="'$(GameLibsDir)' == ''">E:\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed</GameLibsDir>
     <NoWarn>CS0649</NoWarn>
+    <PackageDir>$(MSBuildProjectDirectory)\bin\$(Configuration)\$(TargetFramework)\package</PackageDir>
   </PropertyGroup>
-
-  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('OSX'))">
-    <GameLibsDir>$(HOME)/Library/Application Support/Steam/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/Managed</GameLibsDir>
-    <LocalModsDir>$(HOME)/Library/Application Support/unity.Klei.Oxygen Not Included/mods/Local</LocalModsDir>
-    <ILRepack>mono $(ILRepack)</ILRepack>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
-    <GameLibsDir>E:\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed</GameLibsDir>
-    <LocalModsDir>$(UserProfile)\Documents\Klei\OxygenNotIncluded\mods\Local</LocalModsDir>
-  </PropertyGroup>
-  <PropertyGroup>
-    <BundleDir>$(MSBuildProjectDirectory)\bundle</BundleDir>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="ilmerge" Version="3.0.41" />
-    <PackageReference Include="ILRepack" Version="2.0.44">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="7.0.1" />
+    <Compile Include="src\**\*.cs" />
     <PackageReference Include="PLib" Version="4.19.0" />
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\New folder\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\New folder\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\New folder\Assembly-CSharp-firstpass.dll</HintPath>
-    </Reference>
-
-    <Reference Include="System" />
-
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>..\..\..\New folder\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\New folder\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-
-    <Reference Include="UnityEngine.TextCoreTextEngineModule">
-      <HintPath>..\..\..\New folder\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
-    </Reference>
-
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\..\..\New folder\UnityEngine.TextRenderingModule.dll</HintPath>
-    </Reference>
-
-    <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\..\New folder\UnityEngine.UI.dll</HintPath>
-    </Reference>
-
-    <Reference Include="UnityEngine.UIModule">
-      <HintPath>..\..\..\New folder\UnityEngine.UIModule.dll</HintPath>
-    </Reference>
+    <PackageReference Include="ILRepack" Version="2.0.44" PrivateAssets="all" />
+    <Reference Include="$(GameLibsDir)\Newtonsoft.Json.dll" />
+    <Reference Include="$(GameLibsDir)\0Harmony.dll" />
+    <Reference Include="$(GameLibsDir)\Assembly-CSharp.dll" />
+    <Reference Include="$(GameLibsDir)\Assembly-CSharp-firstpass.dll" />
+    <Reference Include="$(GameLibsDir)\Unity.TextMeshPro.dll" />
+    <Reference Include="$(GameLibsDir)\UnityEngine.CoreModule.dll" />
+    <Reference Include="$(GameLibsDir)\UnityEngine.TextCoreTextEngineModule.dll" />
+    <Reference Include="$(GameLibsDir)\UnityEngine.TextRenderingModule.dll" />
+    <Reference Include="$(GameLibsDir)\UnityEngine.UI.dll" />
+    <Reference Include="$(GameLibsDir)\UnityEngine.UIModule.dll" />
   </ItemGroup>
-
-  <Target Name="Merge" AfterTargets="Build">
-    <ItemGroup>
-      <InputAssemblies Include="$(OutDir)$(AssemblyName).dll" />
-      <InputAssemblies Include="$(OutDir)PLib.dll" />
-    </ItemGroup>
-    <ItemGroup>
-      <LibraryPath Include="$(GameLibsDir)" />
-    </ItemGroup>
-    <!-- Pass each lib path separately -->
-    <Exec Command="$(ILRepack) /internalize /lib:$(GameLibsDir) /lib:$(OutDir) /out:$(OutDir)$(BaseName).dll $(OutDir)$(AssemblyName).dll $(OutDir)PLib.dll" />
+  <Target Name="Package" AfterTargets="Build">
+    <MakeDir Directories="$(PackageDir)" />
+    <Exec Command="&quot;$(ILRepack)&quot; /internalize /lib:&quot;$(GameLibsDir)&quot; /lib:&quot;$(TargetDir).&quot; /out:&quot;$(PackageDir)\DarknessNotExcluded.dll&quot; &quot;$(TargetPath)&quot; &quot;$(TargetDir)PLib.dll&quot;" />
+    <Copy SourceFiles="mod.yaml;mod_info.yaml;preview.png" DestinationFolder="$(PackageDir)" />
   </Target>
-
-  <Target Name="Bundle" AfterTargets="Merge">
-    <RemoveDir Directories="$(BundleDir)" />
-    <Copy SourceFiles="$(OutDir)$(BaseName).dll" DestinationFolder="$(BundleDir)" />
-    <Copy SourceFiles="mod.yaml" DestinationFolder="$(BundleDir)" />
-    <Copy SourceFiles="assets/square-192.png" DestinationFiles="$(BundleDir)\preview.png" />
-    <PropertyGroup>
-      <ModInfo>supportedContent: ALL
-minimumSupportedBuild: $(MinSupportedGameBuild)
-version: $(Version)
-APIVersion: 2</ModInfo>
-    </PropertyGroup>
-    <WriteLinesToFile File="$(BundleDir)/mod_info.yaml" Lines="$(ModInfo)" Overwrite="true" />
-  </Target>
-
-  <Target Name="Install" AfterTargets="Bundle">
-    <ItemGroup>
-      <Bundle Include="$(BundleDir)\**\*" />
-    </ItemGroup>
-    <RemoveDir Directories="$(LocalModsDir)\$(BaseName)" />
-    <Copy SourceFiles="@(Bundle)" DestinationFolder="$(LocalModsDir)\$(BaseName)" />
-  </Target>
-
 </Project>

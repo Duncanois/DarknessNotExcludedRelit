@@ -1,0 +1,13 @@
+  Determining projects to restore...
+  Restored C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit\project.csproj (in 441 ms).
+  project -> C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit\bin\Debug\net48\DarknessNotExcluded.mod.dll
+  ------------- IL Repack Arguments -------------
+  /internalize /lib:E:\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed /lib:C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit\bin\Debug\net48\. /out:C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit\bin\Debug\net48\package\DarknessNotExcluded.dll C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit\bin\Debug\net48\DarknessNotExcluded.mod.dll C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit\bin\Debug\net48\PLib.dll
+  -----------------------------------------------
+  Wrote C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit\bin\Debug\net48\package\DarknessNotExcluded.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.36

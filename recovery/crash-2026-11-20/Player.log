@@ -1,0 +1,258 @@
+Mono path[0] = 'E:/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded_Data/Managed'
+Mono config path = 'E:/SteamLibrary/steamapps/common/OxygenNotIncluded/MonoBleedingEdge/etc'
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.3.17f1 (cf0352b38e81)
+[Subsystems] Discovering subsystems at path E:/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded_Data/UnitySubsystems
+GfxDevice: creating device client; kGfxThreadingModeClientWorkerJobs
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   NVIDIA
+    VRAM:     5966 MB
+    Driver:   32.0.16.1714
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.239 seconds
+- Finished resetting the current domain, in  0.002 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.446000 ms
+[10:23:01.340] [1] [INFO] Applying resolution 1920x1080 @240.001hz (fullscreen: FullScreenWindow)
+[10:23:01.349] [1] [INFO] Low Res Textures? No
+[10:23:01.352] [1] [INFO] Date: 11/20/2026 12:23:01
+[10:23:01.354] [1] [INFO] Build: ??-764025-? (release)
+[10:23:01.356] [1] [INFO] Creating SteamManager.
+[10:23:01.429] [1] [INFO] DistributionPlatform initialized.
+[10:23:01.429] [1] [INFO] -----------------------------------------------------------
+[10:23:01.435] [1] [INFO] Build: U60-764025-SCRP (release)
+[10:23:01.435] [1] [INFO] -----------------------------------------------------------
+[10:23:01.435] [1] [INFO] DLC Information
+[10:23:01.438] [1] [INFO] - DLC4_ID loaded: True
+[10:23:01.438] [1] [INFO] - DLC3_ID loaded: True
+[10:23:01.438] [1] [INFO] - DLC2_ID loaded: True
+[10:23:01.438] [1] [INFO] - EXPANSION1_ID loaded: True
+[10:23:01.438] [1] [INFO] -----------------------------------------------------------
+[10:23:04.006] [1] [INFO] Loading Expansion1 assets from bundle
+[10:23:04.157] [1] [INFO] Loading DLC DLC2_ID assets from bundle
+[10:23:04.196] [1] [INFO] Loading DLC DLC3_ID assets from bundle
+[10:23:04.243] [1] [INFO] Loading DLC DLC4_ID assets from bundle
+SYSTEM INFO:
+    Platform=WindowsPlayer
+    OSname=Windows 11  (10.0.26300)
+    OSversion=10.0.26300.0
+    CPUmodel=H610M K DDR4 (Gigabyte Technology Co., Ltd.)
+    CPUdeviceType=Desktop
+    CPUarch=AMD64
+    ProcBits=64
+    CPUcount=8
+    CPUtype=Intel(R) Core(TM) i3-14100F
+    SystemMemoryMegs=32608
+    GPUgraphicsDeviceID=8644
+    GPUname=NVIDIA GeForce GTX 1660 SUPER
+    GPUgraphicsDeviceType=Direct3D11
+    GPUgraphicsDeviceVendor=NVIDIA
+    GPUgraphicsDeviceVendorID=4318
+    GPUgraphicsDeviceVersion=Direct3D 11.0 [level 11.1]
+    GPUmemoryMegs=5966
+    GPUgraphicsMultiThreaded=False
+    GPUgraphicsShaderLevel=50
+    GPUmaxTextureSize=16384
+    GPUnpotSupport=Full
+    GPUsupportedRenderTargetCount=8
+    GPUsupports2DArrayTextures=True
+    GPUsupports3DTextures=True
+    GPUsupportsComputeShaders=True
+    GPUsupportsImageEffects=True
+    GPUsupportsInstancing=True
+    GPUsupportsRenderToCubemap=True
+    GPUsupportsShadows=True
+    GPUsupportsSparseTextures=True
+    GPUcopyTextureSupport=Basic, Copy3D, DifferentTypes, TextureToRT, RTToTexture
+    System Language=English
+[10:23:04.446] [1] [INFO] Initializing at 2026-11-20 10:23:04.446
+[10:23:04.446] [1] [INFO] Save path: C:\Users\dunca\Documents\Klei\OxygenNotIncluded
+[10:23:05.146] [1] [INFO] 	Darkness Not Excluded has a mod.yaml with a staticID `nevir.DarknessNotExcluded`, using that from now on.
+[10:23:05.162] [1] [INFO] Darkness Not Excluded: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.163] [1] [INFO] 	Education Now Included has a mod.yaml with a staticID `EducationNowIncluded`, using that from now on.
+[10:23:05.163] [1] [INFO] Education Now Included: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.165] [1] [INFO] 	Expanded Lights (Updated) has a mod.yaml with a staticID `ExpandedLightsUpdated`, using that from now on.
+[10:23:05.168] [1] [INFO] Expanded Lights (Updated): Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.169] [1] [INFO] 	Fast Track has a mod.yaml with a staticID `PeterHan.FastTrack`, using that from now on.
+[10:23:05.170] [1] [INFO] Fast Track: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.171] [1] [INFO] 	Pumped Airlock Door has a mod.yaml with a staticID `Duncan.PumpedAirlockDoor`, using that from now on.
+[10:23:05.173] [1] [INFO] Pumped Airlock Door: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.173] [1] [INFO] Warning Notification Manager (SGTIM_NotificationManager_dev): Setting up mod.
+[10:23:05.173] [1] [INFO] 	Warning Notification Manager has a mod.yaml with a staticID `SGTIM_NotificationManager`, using that from now on.
+[10:23:05.174] [1] [INFO] 	Warning Notification Manager: Found valid mod_info.yaml in folder 'root': requiredDlcIds='', forbiddenDlcIds='' at 737790
+[10:23:05.174] [1] [INFO] 	Warning Notification Manager: No archived_versions for this mod, using root version directly.
+[10:23:05.174] [1] [INFO] Warning Notification Manager: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.175] [1] [INFO] 	Expanded Lights (Updated) has a mod.yaml with a staticID `ExpandedLightsUpdated`, using that from now on.
+[10:23:05.177] [1] [INFO] Expanded Lights (Updated): Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.177] [1] [INFO] 	Rephysicalized has a mod.yaml with a staticID `Rephysicalized`, using that from now on.
+[10:23:05.178] [1] [INFO] Rephysicalized: Successfully loaded from path 'root' with content 'LayerableFiles, DLL, Animation'.
+[10:23:05.179] [1] [INFO] 	Ronivans Legacy - Industrial Revolution has a mod.yaml with a staticID `RonivansLegacy_ChemicalProcessing`, using that from now on.
+[10:23:05.180] [1] [INFO] Ronivans Legacy - Industrial Revolution: Successfully loaded from path 'root' with content 'LayerableFiles, DLL, Animation'.
+[10:23:05.181] [1] [INFO] 	Rocketry Expanded has a mod.yaml with a staticID `Rocketry Expanded`, using that from now on.
+[10:23:05.186] [1] [INFO] Rocketry Expanded: Successfully loaded from path 'root' with content 'LayerableFiles, DLL, Animation'.
+[10:23:05.186] [1] [INFO] 	Diseases Restored has a mod.yaml with a staticID `DiseasesReimagined`, using that from now on.
+[10:23:05.188] [1] [INFO] Diseases Restored: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.189] [1] [INFO] 	RadBoltFission has a mod.yaml with a staticID `RadBoltFission`, using that from now on.
+[10:23:05.189] [1] [INFO] RadBoltFission: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.190] [1] [INFO] 	Diseases Restored has a mod.yaml with a staticID `DiseasesReimagined`, using that from now on.
+[10:23:05.192] [1] [INFO] Diseases Restored: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.193] [1] [WARNING] Recoverable parse error in C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3669014459\mod.yaml
+Found a property 'version' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:23:05.193] [1] [WARNING] Recoverable parse error in C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3669014459\mod.yaml
+Found a property 'APIVersion' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:23:05.193] [1] [WARNING] Recoverable parse error in C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3669014459\mod.yaml
+Found a property 'requiredDLCs' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:23:05.193] [1] [WARNING] Recoverable parse error in C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3669014459\mod.yaml
+Found a property 'dependencies' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:23:05.193] [1] [INFO] 	Retirement NOT Included v1.1.0 - Senior Uprising has a mod.yaml with a staticID `RNI`, using that from now on.
+[10:23:05.195] [1] [INFO] Retirement NOT Included v1.1.0 - Senior Uprising: Successfully loaded from path 'root' with content 'Animation'.
+[10:23:05.196] [1] [INFO] 	Oxygen Not Included Together has a mod.yaml with a staticID `ONI_Together`, using that from now on.
+[10:23:05.196] [1] [INFO] Oxygen Not Included Together: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.197] [1] [INFO] 	Blueprints Expanded has a mod.yaml with a staticID `BlueprintsV2`, using that from now on.
+[10:23:05.199] [1] [INFO] Blueprints Expanded: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.200] [1] [INFO] 	Duplicant Stat Selector [DSS] has a mod.yaml with a staticID `SetStartDupes`, using that from now on.
+[10:23:05.203] [1] [INFO] Duplicant Stat Selector [DSS]: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.203] [1] [INFO] 	Darkness Not Excluded Relit has a mod.yaml with a staticID `Duncanois.DarknessNotExcludedRelit`, using that from now on.
+[10:23:05.205] [1] [INFO] Darkness Not Excluded Relit: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.206] [1] [INFO] 	Dupery Fixed has a mod.yaml with a staticID `DuperyFixed`, using that from now on.
+[10:23:05.207] [1] [INFO] Dupery Fixed: Successfully loaded from path 'root' with content 'Strings, DLL, Animation'.
+[10:23:05.208] [1] [INFO] 	More Bionics has a mod.yaml with a staticID `print6bionics`, using that from now on.
+[10:23:05.209] [1] [INFO] More Bionics: Successfully loaded from path 'root' with content 'Strings, Animation'.
+[10:23:05.210] [1] [INFO] 	Bionic_Overclock has a mod.yaml with a staticID `Bionic_Overclock`, using that from now on.
+[10:23:05.216] [1] [INFO] Bionic_Overclock: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.217] [1] [INFO] 	Athletic Manual Generator has a mod.yaml with a staticID `Sanchozz.ONIMods.AthleticsGenerator`, using that from now on.
+[10:23:05.218] [1] [INFO] Athletic Manual Generator: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.219] [1] [INFO] 	Airlock Door has a mod.yaml with a staticID `PeterHan.AirlockDoor`, using that from now on.
+[10:23:05.220] [1] [INFO] Airlock Door: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.220] [1] [INFO] 	Darkness Not Excluded has a mod.yaml with a staticID `nevir.DarknessNotExcluded`, using that from now on.
+[10:23:05.222] [1] [INFO] Darkness Not Excluded: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.223] [1] [INFO] 	Demolior Story Trait has a mod.yaml with a staticID `DemoliorStoryTrait`, using that from now on.
+[10:23:05.223] [1] [INFO] Demolior Story Trait: Successfully loaded from path 'root' with content 'LayerableFiles, DLL'.
+[10:23:05.224] [1] [INFO] 	Insulated Radbolt Joint Plate has a mod.yaml with a staticID `Sanchozz.ONIMods.HEPBridgeInsulationTile`, using that from now on.
+[10:23:05.226] [1] [INFO] Insulated Radbolt Joint Plate: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.228] [1] [INFO] Insulated Door: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.229] [1] [INFO] 	Remote Work NOT Supported has a mod.yaml with a staticID `remote_work`, using that from now on.
+[10:23:05.229] [1] [INFO] Remote Work NOT Supported: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.230] [1] [WARNING] Recoverable parse error in C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3523317587\mod.yaml
+Found a property 'name' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:23:05.230] [1] [WARNING] Recoverable parse error in C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3523317587\mod.yaml
+Found a property 'version' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:23:05.230] [1] [WARNING] Recoverable parse error in C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3523317587\mod.yaml
+Found a property 'author' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:23:05.230] [1] [WARNING] Recoverable parse error in C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3523317587\mod.yaml
+Found a property 'assembly' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:23:05.230] [1] [WARNING] Recoverable parse error in C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3523317587\mod.yaml
+Found a property 'entry_class' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:23:05.232] [1] [INFO] Trapdoors & Floor Hatches Revived: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.233] [1] [INFO] 	Skilled Enough has a mod.yaml with a staticID `airenelias.SkilledEnough`, using that from now on.
+[10:23:05.233] [1] [INFO] Skilled Enough: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.235] [1] [INFO] 	Random Clothes has a mod.yaml with a staticID `MauroJunior.RandomCloth`, using that from now on.
+[10:23:05.236] [1] [INFO] Random Clothes: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.237] [1] [INFO] 	[Vanilla + DLC] Diseases Expanded has a mod.yaml with a staticID `pether-pg.DiseasesExpanded`, using that from now on.
+[10:23:05.240] [1] [INFO] [Vanilla + DLC] Diseases Expanded: Successfully loaded from path 'root' with content 'LayerableFiles, DLL, Animation'.
+[10:23:05.241] [1] [INFO] 	Darkness Not Excluded (fixed) has a mod.yaml with a staticID `nevir.DarknessNotExcluded`, using that from now on.
+[10:23:05.242] [1] [INFO] Darkness Not Excluded (fixed): Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.243] [1] [WARNING] Recoverable parse error in C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/2002421412\mod.yaml
+Found a property '﻿title' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:23:05.243] [1] [INFO] 	Customizable Speed has a mod.yaml with a staticID `CustomizableSpeed`, using that from now on.
+[10:23:05.244] [1] [INFO] Customizable Speed: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.246] [1] [INFO] Insulated Joint Plate [FIXED]: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.247] [1] [INFO] 	Mod Updater has a mod.yaml with a staticID `PeterHan.ModUpdateDate`, using that from now on.
+[10:23:05.249] [1] [INFO] Mod Updater: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.249] [1] [INFO] 	Blueprints fixed has a mod.yaml with a staticID `Blueprints`, using that from now on.
+[10:23:05.250] [1] [INFO] Blueprints fixed: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.252] [1] [INFO] 	Warning Notification Manager has a mod.yaml with a staticID `SGTIM_NotificationManager`, using that from now on.
+[10:23:05.253] [1] [INFO] Warning Notification Manager: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.254] [1] [INFO] 	Natural Backwalls Everywhere has a mod.yaml with a staticID `Isochronous.NaturalBackwallsEverywhere`, using that from now on.
+[10:23:05.255] [1] [INFO] Natural Backwalls Everywhere: Successfully loaded from path 'root' with content 'LayerableFiles, DLL'.
+[10:23:05.268] [1] [INFO] Using builtin mod system.
+[10:23:05.268] [1] [INFO] Loading mod content DLL [Darkness Not Excluded Relit:3609476592] (provides DLL)
+[10:23:05.271] [1] [INFO] Loading MOD dll: DarknessNotExcluded.dll
+[10:23:05.587] [1] [ERROR] null Exception while loading mod Duncanois.DarknessNotExcludedRelit at C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3609476592. 
+HarmonyLib.HarmonyException: Patching exception in method null ---> System.ArgumentException: Undefined target method for patch method static System.Boolean DarknessNotIncluded.Plants.Patched_IlluminationVulnerable_GetDescriptors::Prefix(IlluminationVulnerable __instance, System.Collections.Generic.List`1& __result)
+  at HarmonyLib.PatchClassProcessor.PatchWithAttributes (System.Reflection.MethodBase& lastOriginal, System.Boolean unpatch) [0x00047] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.PatchClassProcessor.Patch () [0x00064] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+   --- End of inner exception stack trace ---
+  at HarmonyLib.PatchClassProcessor.ReportException (System.Exception exception, System.Reflection.MethodBase original) [0x00154] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.PatchClassProcessor.Patch () [0x00096] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.Harmony.<PatchAll>b__10_1 (System.Type type) [0x00007] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.CollectionExtensions.Do[T] (System.Collections.Generic.IEnumerable`1[T] sequence, System.Action`1[T] action) [0x00014] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.CollectionExtensions.DoIf[T] (System.Collections.Generic.IEnumerable`1[T] sequence, System.Func`2[T,TResult] condition, System.Action`1[T] action) [0x00007] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.Harmony.PatchAll (System.Reflection.Assembly assembly) [0x00006] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at KMod.UserMod2.OnLoad (HarmonyLib.Harmony harmony) [0x00007] in <f977a24581804c14a3d841c1a71ed35d>:0 
+  at DarknessNotIncluded.Mod.OnLoad (HarmonyLib.Harmony harmony) [0x00001] in <151de71daa33457db1b2cbf55ef47b46>:0 
+  at KMod.DLLLoader.LoadDLLs (KMod.Mod ownerMod, System.String harmonyId, System.String path, System.Boolean isDev) [0x00235] in <f977a24581804c14a3d841c1a71ed35d>:0 
+Exception while loading mod Duncanois.DarknessNotExcludedRelit at C:/Users/dunca/Documents/Klei/OxygenNotIncluded/mods/Steam/3609476592. 
+HarmonyLib.HarmonyException: Patching exception in method null ---> System.ArgumentException: Undefined target method for patch method static System.Boolean DarknessNotIncluded.Plants.Patched_IlluminationVulnerable_GetDescriptors::Prefix(IlluminationVulnerable __instance, System.Collections.Generic.List`1& __result)
+  at HarmonyLib.PatchClassProcessor.PatchWithAttributes (System.Reflection.MethodBase& lastOriginal, System.Boolean unpatch) [0x00047] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.PatchClassProcessor.Patch () [0x00064] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+   --- End of inner exception stack trace ---
+  at HarmonyLib.PatchClassProcessor.ReportException (System.Exception exception, System.Reflection.MethodBase original) [0x00154] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.PatchClassProcessor.Patch () [0x00096] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.Harmony.<PatchAll>b__10_1 (System.Type type) [0x00007] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.CollectionExtensions.Do[T] (System.Collections.Generic.IEnumerable`1[T] sequence, System.Action`1[T] action) [0x00014] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.CollectionExtensions.DoIf[T] (System.Collections.Generic.IEnumerable`1[T] sequence, System.Func`2[T,TResult] condition, System.Action`1[T] action) [0x00007] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at HarmonyLib.Harmony.PatchAll (System.Reflection.Assembly assembly) [0x00006] in <f14b4638aa1440a9ae99a46147fec4b9>:0 
+  at KMod.UserMod2.OnLoad (HarmonyLib.Harmony harmony) [0x00007] in <f977a24581804c14a3d841c1a71ed35d>:0 
+  at DarknessNotIncluded.Mod.OnLoad (HarmonyLib.Harmony harmony) [0x00001] in <151de71daa33457db1b2cbf55ef47b46>:0 
+  at KMod.DLLLoader.LoadDLLs (KMod.Mod ownerMod, System.String harmonyId, System.String path, System.Boolean isDev) [0x00235] in <f977a24581804c14a3d841c1a71ed35d>:0 
+[10:23:05.637] [1] [INFO] Failed to load mod Darkness Not Excluded Relit...disabling
+[10:23:05.676] [1] [INFO] Localization.Initialize!
+[10:23:05.698] [1] [INFO] 	Darkness Not Excluded has a mod.yaml with a staticID `nevir.DarknessNotExcluded`, using that from now on.
+[10:23:05.701] [1] [INFO] Darkness Not Excluded: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.701] [1] [INFO] Subscribe to mod Darkness Not Excluded
+[10:23:05.704] [1] [INFO] 	Education Now Included has a mod.yaml with a staticID `EducationNowIncluded`, using that from now on.
+[10:23:05.706] [1] [INFO] Education Now Included: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.706] [1] [INFO] Subscribe to mod Education Now Included
+[10:23:05.710] [1] [INFO] 	Expanded Lights (Updated) has a mod.yaml with a staticID `ExpandedLightsUpdated`, using that from now on.
+[10:23:05.712] [1] [INFO] Expanded Lights (Updated): Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.712] [1] [INFO] Subscribe to mod Expanded Lights (Updated)
+[10:23:05.717] [1] [INFO] 	Fast Track has a mod.yaml with a staticID `PeterHan.FastTrack`, using that from now on.
+[10:23:05.719] [1] [INFO] Fast Track: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.719] [1] [INFO] Subscribe to mod Fast Track
+[10:23:05.723] [1] [INFO] 	Pumped Airlock Door has a mod.yaml with a staticID `Duncan.PumpedAirlockDoor`, using that from now on.
+[10:23:05.724] [1] [INFO] Pumped Airlock Door: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:23:05.724] [1] [INFO] Subscribe to mod Pumped Airlock Door
+[10:23:05.729] [1] [INFO] Warning Notification Manager (SGTIM_NotificationManager_dev): Setting up mod.
+[10:23:05.730] [1] [INFO] 	Warning Notification Manager has a mod.yaml with a staticID `SGTIM_NotificationManager`, using that from now on.
+[10:23:05.730] [1] [INFO] 	Warning Notification Manager: Found valid mod_info.yaml in folder 'root': requiredDlcIds='', forbiddenDlcIds='' at 737790
+[10:23:05.731] [1] [INFO] 	Warning Notification Manager: No archived_versions for this mod, using root version directly.
+[10:23:05.731] [1] [INFO] Warning Notification Manager: Successfully loaded from path 'root' with content 'DLL'.
+[10:23:05.731] [1] [INFO] Subscribe to mod Warning Notification Manager
+[10:23:05.776] [1] [INFO] Test Data Location / docs / C:\Users\dunca\Documents\Klei\OxygenNotIncluded
+[10:23:05.776] [1] [INFO] Test Data Location / local / C:\Users\dunca\AppData\Local\Klei\OxygenNotIncluded
+[10:23:05.779] [1] [INFO] Test Data Locations / C:\Users\dunca\Documents\Klei\OxygenNotIncluded\test / write True / read True / removed True
+[10:23:05.779] [1] [INFO] Test Data Locations / C:\Users\dunca\AppData\Local\Klei\OxygenNotIncluded\test / write True / read True / removed True
+[10:23:05.781] [1] [INFO] Logged into Steam with ID:76561198161193837, NAME:Duncanois
+[10:23:05.781] [1] [INFO] [Account] Requesting auth ticket from Steam
+[10:23:08.197] [6] [INFO] [Account] Got login for user KU_GLJ5k5Ph
+[10:23:09.096] [8] [INFO] World settings reload complete!
+[10:23:10.151] [1] [INFO] Checking which steam branch we're on. Got: []
+Unloading 5 Unused Serialized files (Serialized files now loaded: 4)
+Unloading 6389 unused Assets to reduce memory usage. Loaded Objects now: 82680.
+Total: 57.641100 ms (FindLiveObjects: 4.496100 ms CreateObjectMapping: 2.712200 ms MarkObjects: 48.160300 ms  DeleteObjects: 2.272000 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 4)
+UnloadTime: 4.977500 ms
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 86782.
+Total: 54.329100 ms (FindLiveObjects: 3.344600 ms CreateObjectMapping: 1.278800 ms MarkObjects: 49.580900 ms  DeleteObjects: 0.124400 ms)
+
+[10:23:10.951] [1] [INFO] -- MAIN MENU -- 
+[10:23:11.027] [1] [INFO] Checking which steam branch we're on. Got: []
+[10:23:11.077] [1] [INFO] Screen resolution updated, saving values to prefs: 1920x1080 @ 240.001, fullscreen: FullScreenWindow
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.

@@ -1,5 +1,6 @@
 using HarmonyLib;
 using System;
+using System.Reflection;
 
 namespace DarknessNotIncluded.Darkness
 {
@@ -20,9 +21,16 @@ namespace DarknessNotIncluded.Darkness
       fullyVisibleLuxThreshold = config.fullyVisibleLuxThreshold;
     });
 
-    [HarmonyPatch(typeof(PropertyTextures)), HarmonyPatch("UpdateFogOfWar")]
+    [HarmonyPatch]
     static class Patched_PropertyTextures_UpdateFogOfWar
     {
+      static MethodBase TargetMethod()
+      {
+        // U60 stores the worker callback in a delegate field rather than a named method.
+        var callback = (Delegate)AccessTools.Field(typeof(PropertyTextures), "UpdateFogOfWar").GetValue(null);
+        return callback.Method;
+      }
+
       static bool Prefix(TextureRegion region, int x0, int y0, int x1, int y1)
       {
         if (Game.Instance.SandboxModeActive && !darknessInSandboxMode) return true;

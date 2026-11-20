@@ -54,19 +54,16 @@ namespace DarknessNotIncluded.Plants
       }
     }
 
-    [HarmonyPatch(typeof(IlluminationVulnerable)), HarmonyPatch("GetDescriptors")]
-    static class Patched_IlluminationVulnerable_GetDescriptors
+    [HarmonyPatch(typeof(IlluminationVulnerable)), HarmonyPatch(nameof(IlluminationVulnerable.CollectDescriptors), new[] { typeof(GameObject), typeof(List<Descriptor>) })]
+    static class Patched_IlluminationVulnerable_CollectDescriptors
     {
-      static bool Prefix(IlluminationVulnerable __instance, ref List<Descriptor> __result)
+      static bool Prefix(IlluminationVulnerable __instance, List<Descriptor> descriptors)
       {
         var maxLux = __instance.GetMaxLux();
         if (maxLux <= 0) return true;
 
         var formattedLux = GameUtil.GetFormattedLux(maxLux);
-        __result = new List<Descriptor>()
-        {
-          new Descriptor(DESCRIPTOR_LABEL.Replace("{Lux}", formattedLux), DESCRIPTOR_TOOLTIP.Replace("{Lux}", formattedLux), Descriptor.DescriptorType.Requirement)
-        };
+        descriptors.Add(new Descriptor(DESCRIPTOR_LABEL.Replace("{Lux}", formattedLux), DESCRIPTOR_TOOLTIP.Replace("{Lux}", formattedLux), Descriptor.DescriptorType.Requirement));
         return false;
       }
     }

@@ -1,0 +1,14 @@
+  Determining projects to restore...
+C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit-Recovery-20261120-121435\source-audit\source-audit.csproj : warning NU1903: Package 'Newtonsoft.Json' 7.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr
+  Restored C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit-Recovery-20261120-121435\source-audit\source-audit.csproj (in 1.97 sec).
+C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit-Recovery-20261120-121435\source-audit\source-audit.csproj : warning NU1903: Package 'Newtonsoft.Json' 7.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr
+  source-audit -> C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit-Recovery-20261120-121435\source-audit\bin\Debug\net471\DarknessNotExcluded.mod.dll
+
+Build succeeded.
+
+C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit-Recovery-20261120-121435\source-audit\source-audit.csproj : warning NU1903: Package 'Newtonsoft.Json' 7.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr
+C:\Users\dunca\Documents\Game Modding\Oxygen Not Included\DarknessNotExcludedRelit-Recovery-20261120-121435\source-audit\source-audit.csproj : warning NU1903: Package 'Newtonsoft.Json' 7.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr
+    2 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:06.84

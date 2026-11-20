@@ -1,0 +1,222 @@
+[
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\BuildingLightingConfig.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\BuildingLightingConfigEntry.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\BuildingType.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\ColorJsonConverter.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\ColorSerializer.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\CompatibilityProbe.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\Config.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\CustomLightShapes.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\GridUtils.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\LightConfig.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\LightShape.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\LightShapeExtensions.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\Log.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\MinionEffectsConfig.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\MinionEffectsConfigEntry.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\MinionEffectType.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\MinionExtensions.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\MinionLightingConfig.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\MinionLightingConfigEntry.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\MinionLightType.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\MinionRoomState.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\Mod.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\PLibUtils.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\PPanelExtensions.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\UnitOrientation.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded\\VisibilityUtils.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Darkness\\Behavior.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Darkness\\FadeUnlitCells.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Darkness\\InspectionLevel.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Darkness\\SelectToolBlockedByDarkness.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.DarknessPenalties\\MinionEffects.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.DarknessPenalties\\MinionMaxSleepLux.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.DarknessPenalties\\MinionSleepDisturbanceTime.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.DuplicantLights\\Behavior.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.DuplicantLights\\MinionLighting.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.DuplicantLights\\ScoutRoverLighting.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Exploration\\Behavior.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Exploration\\DragOverFogOfWar.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Exploration\\GridVisibilityExtensions.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Exploration\\HeadquartersLighting.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Exploration\\HydrogenGeneratorLighting.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Exploration\\LightsRevealFogOfWar.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Exploration\\MicrobeMusherLighting.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Exploration\\ResetDefaultGridVisibility.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Exploration\\RevealAllOfSpace.cs"
+  },
+  {
+    "State": "Changed",
+    "Path": "DarknessNotIncluded.InGameConfig\\DarknessToggleButton.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.LightBonuses\\DecorBonusThreshold.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.LightBonuses\\MinionLitEfficiencyMultiplier.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.OptionsEnhancements\\OptionPreset.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.OptionsEnhancements\\OptionsDialog.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.OptionsEnhancements\\OptionsDialogConsumesMouseScroll.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.OptionsEnhancements\\OptionsDialogPresets.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Plants\\BogBucketMaxLux.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Plants\\DuskCapMaxLux.cs"
+  },
+  {
+    "State": "Same",
+    "Path": "DarknessNotIncluded.Plants\\IlluminationVulnerableSupportsMaxLux.cs"
+  }
+]

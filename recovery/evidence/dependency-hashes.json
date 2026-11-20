@@ -1,0 +1,44 @@
+[
+  {
+    "Path": "C:\\Users\\dunca\\Documents\\New folder\\Assembly-CSharp.dll",
+    "Version": "0.0.0.0",
+    "SHA256": "A29437C9C9A29C0B63E127122CF1798E7708877A98EA276699A8EEC7850D4BA3",
+    "LastWriteTimeUtc": "2025-12-10T00:20:12.8754481Z"
+  },
+  {
+    "Path": "C:\\Users\\dunca\\Documents\\New folder\\Assembly-CSharp-firstpass.dll",
+    "Version": "0.0.0.0",
+    "SHA256": "2B2BDF9CB5FA272403D5E7BA6C33FA46DB7133FD794197957A83047DD22860EE",
+    "LastWriteTimeUtc": "2025-11-20T23:04:47.491785Z"
+  },
+  {
+    "Path": "C:\\Users\\dunca\\Documents\\New folder\\0Harmony.dll",
+    "Version": "2.2.2.0",
+    "SHA256": "4D6554D4DCFF88C57AEB8614041D3DF5111169776531E60833D7C0384311DF2C",
+    "LastWriteTimeUtc": "2023-10-16T01:29:34.1981307Z"
+  },
+  {
+    "Path": "E:\\SteamLibrary\\steamapps\\common\\OxygenNotIncluded\\OxygenNotIncluded_Data\\Managed\\Assembly-CSharp.dll",
+    "Version": "0.0.0.0",
+    "SHA256": "96B192E45E044AA591E7143BBE1126D685DD1A195DB7BA1632FDF4ABD8FE3036",
+    "LastWriteTimeUtc": "2026-11-20T09:47:27.3806451Z"
+  },
+  {
+    "Path": "E:\\SteamLibrary\\steamapps\\common\\OxygenNotIncluded\\OxygenNotIncluded_Data\\Managed\\Assembly-CSharp-firstpass.dll",
+    "Version": "0.0.0.0",
+    "SHA256": "EC4DADA9437739EC8C3253A8884BA9165A56E80FBA97A6494DD42F78148CAD89",
+    "LastWriteTimeUtc": "2026-11-19T18:47:04.1114504Z"
+  },
+  {
+    "Path": "E:\\SteamLibrary\\steamapps\\common\\OxygenNotIncluded\\OxygenNotIncluded_Data\\Managed\\0Harmony.dll",
+    "Version": "2.4.2.0",
+    "SHA256": "AEC7446028FE31D00DFECC684E40011C4208BB036E82617B8DE32002A8E55B53",
+    "LastWriteTimeUtc": "2026-08-31T11:40:58.7892566Z"
+  },
+  {
+    "Path": "E:\\SteamLibrary\\steamapps\\common\\OxygenNotIncluded\\OxygenNotIncluded_Data\\Managed\\Newtonsoft.Json.dll",
+    "Version": "7.0.0.0",
+    "SHA256": "3AC07F0372727F697B168F40E3C2D48B3539661A73591128DBAB82DC0C4AB61E",
+    "LastWriteTimeUtc": "2023-09-02T01:51:48.2646751Z"
+  }
+]

@@ -1,0 +1,822 @@
+[
+  {
+    "Path": "DarknessNotIncluded.Darkness\\Behavior.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Darkness\\FadeUnlitCells.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Darkness\\InspectionLevel.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Darkness\\SelectToolBlockedByDarkness.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.DarknessPenalties\\MinionEffects.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.DarknessPenalties\\MinionMaxSleepLux.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.DarknessPenalties\\MinionSleepDisturbanceTime.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.DuplicantLights\\Behavior.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.DuplicantLights\\MinionLighting.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.DuplicantLights\\ScoutRoverLighting.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Exploration\\Behavior.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Exploration\\DragOverFogOfWar.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Exploration\\GridVisibilityExtensions.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Exploration\\HeadquartersLighting.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Exploration\\HydrogenGeneratorLighting.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Exploration\\LightsRevealFogOfWar.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Exploration\\MicrobeMusherLighting.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Exploration\\ResetDefaultGridVisibility.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Exploration\\RevealAllOfSpace.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.InGameConfig\\DarknessToggleButton.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.LightBonuses\\DecorBonusThreshold.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.LightBonuses\\MinionLitEfficiencyMultiplier.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.OptionsEnhancements\\OptionPreset.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.OptionsEnhancements\\OptionsDialog.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.OptionsEnhancements\\OptionsDialogConsumesMouseScroll.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.OptionsEnhancements\\OptionsDialogPresets.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Plants\\BogBucketMaxLux.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Plants\\DuskCapMaxLux.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded.Plants\\IlluminationVulnerableSupportsMaxLux.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\BuildingLightingConfig.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\BuildingLightingConfigEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\BuildingType.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\ColorJsonConverter.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\ColorSerializer.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\CompatibilityProbe.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\Config.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\CustomLightShapes.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\GridUtils.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\LightConfig.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\LightShape.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\LightShapeExtensions.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\Log.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\MinionEffectsConfig.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\MinionEffectsConfigEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\MinionEffectType.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\MinionExtensions.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\MinionLightingConfig.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\MinionLightingConfigEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\MinionLightType.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\MinionRoomState.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\Mod.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\PLibUtils.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\PPanelExtensions.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\UnitOrientation.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "DarknessNotIncluded\\VisibilityUtils.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Actions\\PAction.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Actions\\PActionManager.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Actions\\PKeyBinding.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Actions\\PToolMode.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.AVC\\IModVersionChecker.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.AVC\\JsonURLVersionChecker.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.AVC\\ModOutdatedWarning.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.AVC\\ModVersionCheckResults.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.AVC\\PVersionCheck.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.AVC\\SteamVersionChecker.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.AVC\\VersionCheckTask.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.AVC\\YamlURLVersionChecker.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Buildings\\BuildIngredient.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Buildings\\ColoredRangeVisualizer.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Buildings\\ConduitConnection.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Buildings\\PBuilding.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Buildings\\PBuildingManager.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Buildings\\PowerRequirement.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\AutoUnbox.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\ExtensionMethods.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\IPLibRegistry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\IRefreshUserMenu.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PForwardedComponent.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PGameUtils.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PLibCorePatches.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PLibLocalization.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PLibStrings.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PPatchTools.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PRegistry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PRegistryComponent.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PRemoteComponent.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PRemoteRegistry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PriorityDictionary.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PriorityQueue.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PStateMachines.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PTranspilerTools.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PUtil.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Core\\PVersionList.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Database\\PCodexManager.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Database\\PColonyAchievement.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Database\\PDatabaseUtils.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Database\\PLocalization.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Detours\\DetouredField.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Detours\\DetouredMethod.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Detours\\DetourException.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Detours\\IDetouredField.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Detours\\LazyDetouredField.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Detours\\PDetours.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Lighting\\ILightShape.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Lighting\\LightingArgs.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Lighting\\LightingPatches.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Lighting\\OctantBuilder.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Lighting\\PLightManager.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Lighting\\PLightShape.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Lighting\\PRemoteLightWrapper.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\ButtonOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\CategoryExpandHandler.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\CheckboxOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\Color32OptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\ColorBaseOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\ColorGradient.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\ColorOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\CompositeOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\ConfigFileAttribute.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\FloatOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\IntOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\IOptions.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\IOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\IOptionSpec.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\LimitAttribute.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\LogFloatOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\ModDialogInfo.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\ModInfoAttribute.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\NullableFloatOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\NullableIntOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\OptionAttribute.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\OptionsDialog.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\OptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\OptionsHandlers.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\POptions.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\RequireDLCAttribute.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\RestartRequiredAttribute.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\SelectOneOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\SingletonOptions.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\SlidingBaseOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\StringOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.Options\\TextBlockOptionsEntry.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.PatchManager\\IPatchMethodInstance.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.PatchManager\\IPLibAnnotation.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.PatchManager\\PLibMethodAttribute.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.PatchManager\\PLibMethodInstance.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.PatchManager\\PLibPatchAttribute.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.PatchManager\\PLibPatchInstance.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.PatchManager\\PPatchManager.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.PatchManager\\RunAt.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\AbstractLayoutGroup.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\BoxLayoutResults.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\BoxLayoutStatus.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\CardLayoutResults.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\GridLayoutResults.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\RelativeConstraintType.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\RelativeLayoutParams.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\RelativeLayoutParamsBase.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\RelativeLayoutResults.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\RelativeLayoutUtil.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI.Layouts\\SizedGridComponent.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\BoxLayoutGroup.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\BoxLayoutParams.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\CardLayoutGroup.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\GridColumnSpec.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\GridComponent.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\GridComponentSpec.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\GridRowSpec.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\IDynamicSizable.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\ImageTransform.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\ISettableFlexSize.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\ITooltipListableOption.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\IUIComponent.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\LayoutSizes.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PanelDirection.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PButton.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PCheckBox.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PComboBox.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PComboBoxComponent.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PContainer.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PDialog.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PGridLayoutGroup.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PGridPanel.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PLabel.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PPanel.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PRelativePanel.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PScrollPane.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PSliderSingle.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PSpacer.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PTextArea.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PTextComponent.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PTextField.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PTextFieldEvents.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PToggle.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PUIAnchoring.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PUIDelegates.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PUIElements.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PUITuning.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\PUIUtils.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\RelativeLayoutGroup.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\TextAnchorUtils.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\TextMeshProPatcher.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib.UI\\UIDetours.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib\\DynamicOptionAttribute.cs",
+    "State": "Same"
+  },
+  {
+    "Path": "PeterHan.PLib\\PVersion.cs",
+    "State": "Same"
+  }
+]

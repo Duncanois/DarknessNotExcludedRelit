@@ -1,0 +1,124 @@
+using System;
+using System.Collections.Generic;
+using HarmonyLib;
+using STRINGS;
+using UnityEngine;
+
+namespace DarknessNotIncluded.Plants;
+
+public static class IlluminationVulnerableSupportsMaxLux
+{
+	public class MaxLux : KMonoBehaviour
+	{
+		public int maxLux;
+	}
+
+	[HarmonyPatch(typeof(IlluminationVulnerable))]
+	[HarmonyPatch("OnPrefabInit")]
+	private static class Patched_IlluminationVulnerable_OnPrefabInit
+	{
+		private static void Postfix(IlluminationVulnerable __instance)
+		{
+			IlluminationVulnerable illuminationVulnerable = __instance.gameObject.AddOrGet<IlluminationVulnerable>();
+		}
+	}
+
+	[HarmonyPatch(typeof(IlluminationVulnerable))]
+	[HarmonyPatch("IsCellSafe")]
+	private static class Patched_IlluminationVulnerable_IsCellSafe
+	{
+		private static bool Prefix(IlluminationVulnerable __instance, int cell, ref bool __result)
+		{
+			int maxLux = __instance.GetMaxLux();
+			if (maxLux <= 0)
+			{
+				return true;
+			}
+			if (!Grid.IsValidCell(cell))
+			{
+				__result = false;
+				return false;
+			}
+			__result = Grid.LightIntensity[cell] <= maxLux;
+			return false;
+		}
+	}
+
+	[HarmonyPatch(typeof(IlluminationVulnerable))]
+	[HarmonyPatch("CollectDescriptors", new Type[]
+	{
+		typeof(GameObject),
+		typeof(List<Descriptor>)
+	})]
+	private static class Patched_IlluminationVulnerable_CollectDescriptors
+	{
+		private static bool Prefix(IlluminationVulnerable __instance, List<Descriptor> descriptors)
+		{
+			int maxLux = __instance.GetMaxLux();
+			if (maxLux <= 0)
+			{
+				return true;
+			}
+			string formattedLux = GameUtil.GetFormattedLux(maxLux);
+			descriptors.Add(new Descriptor(DESCRIPTOR_LABEL.Replace("{Lux}", formattedLux), DESCRIPTOR_TOOLTIP.Replace("{Lux}", formattedLux), Descriptor.DescriptorType.Requirement));
+			return false;
+		}
+	}
+
+	[HarmonyPatch(typeof(MinionVitalsPanel))]
+	[HarmonyPatch("GetIlluminationLabel")]
+	private static class Patched_MinionVitalsPanel_GetIlluminationLabel
+	{
+		private static bool Prefix(GameObject go, ref string __result)
+		{
+			IlluminationVulnerable component = go.GetComponent<IlluminationVulnerable>();
+			if (component == null)
+			{
+				return true;
+			}
+			int maxLux = component.GetMaxLux();
+			if (maxLux <= 0)
+			{
+				return true;
+			}
+			__result = Db.Get().Amounts.Illumination.Name + "\n    • " + DESCRIPTOR_LABEL.Replace("{Lux}", GameUtil.GetFormattedLux(maxLux));
+			return false;
+		}
+	}
+
+	[HarmonyPatch(typeof(MinionVitalsPanel))]
+	[HarmonyPatch("GetIlluminationTooltip")]
+	private static class Patched_MinionVitalsPanel_GetIlluminationTooltip
+	{
+		private static bool Prefix(GameObject go, ref string __result)
+		{
+			IlluminationVulnerable component = go.GetComponent<IlluminationVulnerable>();
+			if (component == null)
+			{
+				return true;
+			}
+			int maxLux = component.GetMaxLux();
+			if (maxLux <= 0)
+			{
+				return true;
+			}
+			__result = DESCRIPTOR_TOOLTIP.Replace("{Lux}", GameUtil.GetFormattedLux(maxLux));
+			return false;
+		}
+	}
+
+	public static string DESCRIPTOR_LABEL = "Less than {Lux}";
+
+	public static string DESCRIPTOR_TOOLTIP = "This plant prefers darkness; but will tolerate a " + UI.PRE_KEYWORD + "Light" + UI.PST_KEYWORD + " source emitting at most {Lux}";
+
+	public static void SetMaxLux(this IlluminationVulnerable instance, int maxLux)
+	{
+		instance.SetPrefersDarkness(prefersDarkness: true);
+		instance.gameObject.AddOrGet<MaxLux>().maxLux = maxLux;
+	}
+
+	public static int GetMaxLux(this IlluminationVulnerable instance)
+	{
+		return instance.gameObject.FindComponent<MaxLux>()?.maxLux ?? 0;
+	}
+}

@@ -1,0 +1,167 @@
+{
+  "assembly": ".\\steam-3609476592\\DarknessNotExcluded.dll",
+  "table": "AssemblyRef",
+  "rowCount": 16,
+  "rows": [
+    {
+      "RID": 1,
+      "Token": "0x23000001",
+      "Version": "4.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "0x00000001",
+      "Name": "mscorlib",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 2,
+      "Token": "0x23000002",
+      "Version": "0.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "UnityEngine.CoreModule",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 3,
+      "Token": "0x23000003",
+      "Version": "7.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "0x0000000A",
+      "Name": "Newtonsoft.Json",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 4,
+      "Token": "0x23000004",
+      "Version": "0.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "Assembly-CSharp",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 5,
+      "Token": "0x23000005",
+      "Version": "2.4.2.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "0Harmony",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 6,
+      "Token": "0x23000006",
+      "Version": "4.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "0x00000001",
+      "Name": "System.Core",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 7,
+      "Token": "0x23000007",
+      "Version": "0.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "Assembly-CSharp-firstpass",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 8,
+      "Token": "0x23000008",
+      "Version": "0.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "Unity.TextMeshPro",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 9,
+      "Token": "0x23000009",
+      "Version": "4.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "0x00000001",
+      "Name": "System",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 10,
+      "Token": "0x2300000A",
+      "Version": "0.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "UnityEngine.TextRenderingModule",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 11,
+      "Token": "0x2300000B",
+      "Version": "1.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "UnityEngine.UI",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 12,
+      "Token": "0x2300000C",
+      "Version": "0.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "UnityEngine.UnityWebRequestModule",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 13,
+      "Token": "0x2300000D",
+      "Version": "4.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "0x00000001",
+      "Name": "System.Runtime.Serialization",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 14,
+      "Token": "0x2300000E",
+      "Version": "0.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "UnityEngine.UIModule",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 15,
+      "Token": "0x2300000F",
+      "Version": "0.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "UnityEngine.InputLegacyModule",
+      "Culture": "",
+      "HashValue": "nil"
+    },
+    {
+      "RID": 16,
+      "Token": "0x23000010",
+      "Version": "0.0.0.0",
+      "Flags": "0",
+      "PublicKeyOrToken": "nil",
+      "Name": "UnityEngine.ImageConversionModule",
+      "Culture": "",
+      "HashValue": "nil"
+    }
+  ]
+}

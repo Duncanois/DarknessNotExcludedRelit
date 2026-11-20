@@ -1,0 +1,415 @@
+Mono path[0] = 'E:/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded_Data/Managed'
+Mono config path = 'E:/SteamLibrary/steamapps/common/OxygenNotIncluded/MonoBleedingEdge/etc'
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.3.17f1 (cf0352b38e81)
+[Subsystems] Discovering subsystems at path E:/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded_Data/UnitySubsystems
+GfxDevice: creating device client; kGfxThreadingModeClientWorkerJobs
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   NVIDIA
+    VRAM:     5966 MB
+    Driver:   32.0.16.1714
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.267 seconds
+- Finished resetting the current domain, in  0.002 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.440000 ms
+[10:21:24.593] [1] [INFO] Applying resolution 1920x1080 @240.001hz (fullscreen: FullScreenWindow)
+[10:21:24.602] [1] [INFO] Low Res Textures? No
+[10:21:24.607] [1] [INFO] Date: 11/20/2026 12:21:24
+[10:21:24.608] [1] [INFO] Build: ??-764025-? (release)
+[10:21:24.610] [1] [INFO] Creating SteamManager.
+[10:21:24.693] [1] [INFO] DistributionPlatform initialized.
+[10:21:24.693] [1] [INFO] -----------------------------------------------------------
+[10:21:24.699] [1] [INFO] Build: U60-764025-SCRP (release)
+[10:21:24.699] [1] [INFO] -----------------------------------------------------------
+[10:21:24.699] [1] [INFO] DLC Information
+[10:21:24.703] [1] [INFO] - DLC4_ID loaded: True
+[10:21:24.703] [1] [INFO] - DLC3_ID loaded: True
+[10:21:24.703] [1] [INFO] - DLC2_ID loaded: True
+[10:21:24.703] [1] [INFO] - EXPANSION1_ID loaded: True
+[10:21:24.703] [1] [INFO] -----------------------------------------------------------
+[10:21:27.266] [1] [INFO] Loading Expansion1 assets from bundle
+[10:21:27.422] [1] [INFO] Loading DLC DLC2_ID assets from bundle
+[10:21:27.460] [1] [INFO] Loading DLC DLC3_ID assets from bundle
+[10:21:27.503] [1] [INFO] Loading DLC DLC4_ID assets from bundle
+SYSTEM INFO:
+    Platform=WindowsPlayer
+    OSname=Windows 11  (10.0.26300)
+    OSversion=10.0.26300.0
+    CPUmodel=H610M K DDR4 (Gigabyte Technology Co., Ltd.)
+    CPUdeviceType=Desktop
+    CPUarch=AMD64
+    ProcBits=64
+    CPUcount=8
+    CPUtype=Intel(R) Core(TM) i3-14100F
+    SystemMemoryMegs=32608
+    GPUgraphicsDeviceID=8644
+    GPUname=NVIDIA GeForce GTX 1660 SUPER
+    GPUgraphicsDeviceType=Direct3D11
+    GPUgraphicsDeviceVendor=NVIDIA
+    GPUgraphicsDeviceVendorID=4318
+    GPUgraphicsDeviceVersion=Direct3D 11.0 [level 11.1]
+    GPUmemoryMegs=5966
+    GPUgraphicsMultiThreaded=False
+    GPUgraphicsShaderLevel=50
+    GPUmaxTextureSize=16384
+    GPUnpotSupport=Full
+    GPUsupportedRenderTargetCount=8
+    GPUsupports2DArrayTextures=True
+    GPUsupports3DTextures=True
+    GPUsupportsComputeShaders=True
+    GPUsupportsImageEffects=True
+    GPUsupportsInstancing=True
+    GPUsupportsRenderToCubemap=True
+    GPUsupportsShadows=True
+    GPUsupportsSparseTextures=True
+    GPUcopyTextureSupport=Basic, Copy3D, DifferentTypes, TextureToRT, RTToTexture
+    System Language=English
+[10:21:27.703] [1] [INFO] Initializing at 2026-11-20 10:21:27.703
+[10:21:27.703] [1] [INFO] Save path: C:\Users\dunca\Documents\Klei\OxygenNotIncluded
+[10:21:28.399] [1] [INFO] Using builtin mod system.
+[10:21:28.437] [1] [INFO] Localization.Initialize!
+[10:21:28.472] [1] [INFO] 	Darkness Not Excluded has a mod.yaml with a staticID `nevir.DarknessNotExcluded`, using that from now on.
+[10:21:28.479] [1] [INFO] Darkness Not Excluded: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:28.480] [1] [INFO] Subscribe to mod Darkness Not Excluded
+[10:21:28.488] [1] [INFO] 	Education Now Included has a mod.yaml with a staticID `EducationNowIncluded`, using that from now on.
+[10:21:28.489] [1] [INFO] Education Now Included: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:28.489] [1] [INFO] Subscribe to mod Education Now Included
+[10:21:28.493] [1] [INFO] 	Expanded Lights (Updated) has a mod.yaml with a staticID `ExpandedLightsUpdated`, using that from now on.
+[10:21:28.497] [1] [INFO] Expanded Lights (Updated): Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:28.497] [1] [INFO] Subscribe to mod Expanded Lights (Updated)
+[10:21:28.499] [1] [INFO] 	Fast Track has a mod.yaml with a staticID `PeterHan.FastTrack`, using that from now on.
+[10:21:28.500] [1] [INFO] Fast Track: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:28.500] [1] [INFO] Subscribe to mod Fast Track
+[10:21:28.505] [1] [INFO] 	Pumped Airlock Door has a mod.yaml with a staticID `Duncan.PumpedAirlockDoor`, using that from now on.
+[10:21:28.507] [1] [INFO] Pumped Airlock Door: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:28.507] [1] [INFO] Subscribe to mod Pumped Airlock Door
+[10:21:28.511] [1] [INFO] Warning Notification Manager (SGTIM_NotificationManager_dev): Setting up mod.
+[10:21:28.511] [1] [INFO] 	Warning Notification Manager has a mod.yaml with a staticID `SGTIM_NotificationManager`, using that from now on.
+[10:21:28.512] [1] [INFO] 	Warning Notification Manager: Found valid mod_info.yaml in folder 'root': requiredDlcIds='', forbiddenDlcIds='' at 737790
+[10:21:28.512] [1] [INFO] 	Warning Notification Manager: No archived_versions for this mod, using root version directly.
+[10:21:28.513] [1] [INFO] Warning Notification Manager: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:28.513] [1] [INFO] Subscribe to mod Warning Notification Manager
+[10:21:28.557] [1] [INFO] Test Data Location / docs / C:\Users\dunca\Documents\Klei\OxygenNotIncluded
+[10:21:28.557] [1] [INFO] Test Data Location / local / C:\Users\dunca\AppData\Local\Klei\OxygenNotIncluded
+[10:21:28.560] [1] [INFO] Test Data Locations / C:\Users\dunca\Documents\Klei\OxygenNotIncluded\test / write True / read True / removed True
+[10:21:28.560] [1] [INFO] Test Data Locations / C:\Users\dunca\AppData\Local\Klei\OxygenNotIncluded\test / write True / read True / removed True
+[10:21:28.562] [1] [INFO] Logged into Steam with ID:76561198161193837, NAME:Duncanois
+[10:21:28.562] [1] [INFO] [Account] Requesting auth ticket from Steam
+[10:21:30.931] [6] [INFO] [Account] Got login for user KU_GLJ5k5Ph
+[10:21:31.930] [8] [INFO] World settings reload complete!
+Unloading 5 Unused Serialized files (Serialized files now loaded: 4)
+Unloading 6389 unused Assets to reduce memory usage. Loaded Objects now: 82338.
+Total: 54.363500 ms (FindLiveObjects: 3.194000 ms CreateObjectMapping: 1.827500 ms MarkObjects: 47.469600 ms  DeleteObjects: 1.872100 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 4)
+UnloadTime: 3.959300 ms
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 86777.
+Total: 49.865800 ms (FindLiveObjects: 3.227700 ms CreateObjectMapping: 1.335200 ms MarkObjects: 45.154900 ms  DeleteObjects: 0.147700 ms)
+
+[10:21:33.690] [1] [INFO] -- MAIN MENU -- 
+[10:21:33.796] [1] [INFO] Checking which steam branch we're on. Got: []
+[10:21:33.847] [1] [INFO] Screen resolution updated, saving values to prefs: 1920x1080 @ 240.001, fullscreen: FullScreenWindow
+[10:21:34.312] [1] [INFO] Steam: updating info for mod Expanded Lights (Updated)
+[10:21:34.313] [1] [INFO] Steam: Preview image load failed
+[10:21:34.353] [1] [INFO] Steam: updating info for mod Rephysicalized
+[10:21:34.353] [1] [INFO] Steam: Preview image load failed
+[10:21:34.366] [1] [INFO] Steam: updating info for mod Ronivan's Legacy - Industrial Revolution
+[10:21:34.367] [1] [INFO] Steam: Preview image load failed
+[10:21:34.379] [1] [INFO] Steam: updating info for mod Rocketry Expanded
+[10:21:34.379] [1] [INFO] Steam: Preview image load failed
+[10:21:34.413] [1] [INFO] Steam: updating info for mod [TEMP FIX] Diseases Restored
+[10:21:34.413] [1] [INFO] Steam: Preview image load failed
+[10:21:34.429] [1] [INFO] Steam: updating info for mod RadBolt Fission!
+[10:21:34.429] [1] [INFO] Steam: Preview image load failed
+[10:21:34.439] [1] [INFO] Steam: updating info for mod Diseases Restored
+[10:21:34.439] [1] [INFO] Steam: Preview image load failed
+[10:21:34.460] [1] [INFO] Steam: updating info for mod Retirement NOT Included!
+[10:21:34.461] [1] [INFO] Steam: Preview image load failed
+[10:21:34.499] [1] [INFO] Steam: updating info for mod ONI Together: A Multiplayer Mod
+[10:21:34.499] [1] [INFO] Steam: Preview image load failed
+[10:21:34.508] [1] [INFO] Steam: updating info for mod Blueprints Expanded
+[10:21:34.509] [1] [INFO] Steam: Preview image load failed
+[10:21:34.538] [1] [INFO] Steam: updating info for mod Duplicant Stat Selector
+[10:21:34.539] [1] [INFO] Steam: Preview image load failed
+[10:21:34.564] [1] [INFO] Steam: updating info for mod Darkness Not Excluded (Relit)
+[10:21:34.564] [1] [INFO] Steam: Preview image load failed
+[10:21:34.574] [1] [INFO] Steam: updating info for mod Dupery Fixed
+[10:21:34.575] [1] [INFO] Steam: Preview image load failed
+[10:21:34.596] [1] [INFO] Steam: updating info for mod More Bionics
+[10:21:34.597] [1] [INFO] Steam: Preview image load failed
+[10:21:34.612] [1] [INFO] Steam: updating info for mod Bionic Overclock
+[10:21:34.612] [1] [INFO] Steam: Preview image load failed
+[10:21:34.637] [1] [INFO] Steam: updating info for mod Athletic Manual Generator
+[10:21:34.637] [1] [INFO] Steam: Preview image load failed
+[10:21:34.666] [1] [INFO] Steam: updating info for mod Airlock Door
+[10:21:34.668] [1] [INFO] Steam: Preview image load failed
+[10:21:34.697] [1] [INFO] Steam: updating info for mod Darkness Not Excluded
+[10:21:34.699] [1] [INFO] Steam: Preview image load failed
+[10:21:34.710] [1] [INFO] Steam: updating info for mod Demolior Story Trait
+[10:21:34.710] [1] [INFO] Steam: Preview image load failed
+[10:21:34.739] [1] [INFO] Steam: updating info for mod Insulated Radbolt Joint Plate
+[10:21:34.739] [1] [INFO] Steam: Preview image load failed
+[10:21:34.761] [1] [INFO] Steam: updating info for mod Insulated Door
+[10:21:34.762] [1] [INFO] Steam: Preview image load failed
+[10:21:34.786] [1] [INFO] Steam: updating info for mod Expanded Lights
+[10:21:34.791] [1] [INFO] Steam: Preview image load failed
+[10:21:34.792] [1] [INFO] Steam: updating info for mod Remote Work NOT Supported
+[10:21:34.792] [1] [INFO] Steam: Preview image load failed
+[10:21:34.823] [1] [INFO] Steam: updating info for mod Trapdoors & Floor Hatches Revived
+[10:21:34.823] [1] [INFO] Steam: Preview image load failed
+[10:21:34.845] [1] [INFO] Steam: updating info for mod Skilled Enough
+[10:21:34.845] [1] [INFO] Steam: Preview image load failed
+[10:21:34.861] [1] [INFO] Steam: updating info for mod Random Clothes
+[10:21:34.862] [1] [INFO] Steam: Preview image load failed
+[10:21:34.879] [1] [INFO] Steam: updating info for mod [Vanilla + DLC] Diseases Expanded
+[10:21:34.881] [1] [INFO] Steam: Preview image load failed
+[10:21:34.962] [1] [INFO] Steam: updating info for mod Darkness Not Excluded (fixed)
+[10:21:34.962] [1] [INFO] Steam: Preview image load failed
+[10:21:34.974] [1] [INFO] Steam: updating info for mod Customizable Speed
+[10:21:34.975] [1] [INFO] Steam: Preview image load failed
+[10:21:35.006] [1] [INFO] Steam: updating info for mod Insulated Joint Plate [FIXED]
+[10:21:35.006] [1] [INFO] Steam: Preview image load failed
+[10:21:35.021] [1] [INFO] Steam: updating info for mod Mod Updater
+[10:21:35.021] [1] [INFO] Steam: Preview image load failed
+[10:21:35.030] [1] [INFO] Steam: updating info for mod Blueprints fixed
+[10:21:35.030] [1] [INFO] Steam: Preview image load failed
+[10:21:35.039] [1] [INFO] Steam: updating info for mod Warning Notification Manager
+[10:21:35.039] [1] [INFO] Steam: Preview image load failed
+[10:21:35.059] [1] [INFO] Steam: updating info for mod Natural Backwalls Everywhere
+[10:21:35.059] [1] [INFO] Steam: Preview image load failed
+[10:21:35.089] [1] [INFO] 	Expanded Lights (Updated) has a mod.yaml with a staticID `ExpandedLightsUpdated`, using that from now on.
+[10:21:35.091] [1] [INFO] Expanded Lights (Updated): Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:35.092] [1] [INFO] Subscribe to mod Expanded Lights (Updated)
+[10:21:35.092] [1] [INFO] 	Installing mod: Expanded Lights (Updated)
+[10:21:35.124] [1] [INFO] 	Successfully installed.
+[10:21:35.129] [1] [INFO] 	Rephysicalized has a mod.yaml with a staticID `Rephysicalized`, using that from now on.
+[10:21:35.132] [1] [INFO] Rephysicalized: Successfully loaded from path 'root' with content 'LayerableFiles, DLL, Animation'.
+[10:21:35.132] [1] [INFO] Subscribe to mod Rephysicalized
+[10:21:35.132] [1] [INFO] 	Installing mod: Rephysicalized
+[10:21:35.491] [1] [INFO] 	Successfully installed.
+[10:21:35.498] [1] [INFO] 	Ronivans Legacy - Industrial Revolution has a mod.yaml with a staticID `RonivansLegacy_ChemicalProcessing`, using that from now on.
+[10:21:35.500] [1] [INFO] Ronivans Legacy - Industrial Revolution: Successfully loaded from path 'root' with content 'LayerableFiles, DLL, Animation'.
+[10:21:35.500] [1] [INFO] Subscribe to mod Ronivans Legacy - Industrial Revolution
+[10:21:35.500] [1] [INFO] 	Installing mod: Ronivans Legacy - Industrial Revolution
+[10:21:36.772] [1] [INFO] 	Successfully installed.
+[10:21:36.781] [1] [INFO] 	Rocketry Expanded has a mod.yaml with a staticID `Rocketry Expanded`, using that from now on.
+[10:21:36.789] [1] [INFO] Rocketry Expanded: Successfully loaded from path 'root' with content 'LayerableFiles, DLL, Animation'.
+[10:21:36.789] [1] [INFO] Subscribe to mod Rocketry Expanded
+[10:21:36.789] [1] [INFO] 	Installing mod: Rocketry Expanded
+[10:21:38.327] [1] [INFO] 	Successfully installed.
+[10:21:38.333] [1] [INFO] 	Diseases Restored has a mod.yaml with a staticID `DiseasesReimagined`, using that from now on.
+[10:21:38.335] [1] [INFO] Diseases Restored: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:38.335] [1] [INFO] Subscribe to mod Diseases Restored
+[10:21:38.335] [1] [INFO] 	Installing mod: Diseases Restored
+[10:21:38.363] [1] [INFO] 	Successfully installed.
+[10:21:38.367] [1] [INFO] 	RadBoltFission has a mod.yaml with a staticID `RadBoltFission`, using that from now on.
+[10:21:38.368] [1] [INFO] RadBoltFission: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:38.368] [1] [INFO] Subscribe to mod RadBoltFission
+[10:21:38.368] [1] [INFO] 	Installing mod: RadBoltFission
+[10:21:38.384] [1] [INFO] 	Successfully installed.
+[10:21:38.387] [1] [INFO] 	Diseases Restored has a mod.yaml with a staticID `DiseasesReimagined`, using that from now on.
+[10:21:38.388] [1] [INFO] Diseases Restored: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:38.388] [1] [INFO] Subscribe to mod Diseases Restored
+[10:21:38.388] [1] [INFO] 	Installing mod: Diseases Restored
+[10:21:38.413] [1] [INFO] 	Successfully installed.
+[10:21:38.417] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3669014459\11299699458813955037_legacy.bin\mod.yaml
+Found a property 'version' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:38.417] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3669014459\11299699458813955037_legacy.bin\mod.yaml
+Found a property 'APIVersion' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:38.417] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3669014459\11299699458813955037_legacy.bin\mod.yaml
+Found a property 'requiredDLCs' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:38.417] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3669014459\11299699458813955037_legacy.bin\mod.yaml
+Found a property 'dependencies' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:38.418] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3669014459\11299699458813955037_legacy.bin\mod.yaml
+Found a property 'version' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:38.419] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3669014459\11299699458813955037_legacy.bin\mod.yaml
+Found a property 'APIVersion' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:38.419] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3669014459\11299699458813955037_legacy.bin\mod.yaml
+Found a property 'requiredDLCs' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:38.419] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3669014459\11299699458813955037_legacy.bin\mod.yaml
+Found a property 'dependencies' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:38.419] [1] [INFO] 	Retirement NOT Included v1.1.0 - Senior Uprising has a mod.yaml with a staticID `RNI`, using that from now on.
+[10:21:38.420] [1] [INFO] Retirement NOT Included v1.1.0 - Senior Uprising: Successfully loaded from path 'root' with content 'Animation'.
+[10:21:38.420] [1] [INFO] Subscribe to mod Retirement NOT Included v1.1.0 - Senior Uprising
+[10:21:38.420] [1] [INFO] 	Installing mod: Retirement NOT Included v1.1.0 - Senior Uprising
+[10:21:38.440] [1] [INFO] 	Successfully installed.
+[10:21:38.445] [1] [INFO] 	Oxygen Not Included Together has a mod.yaml with a staticID `ONI_Together`, using that from now on.
+[10:21:38.446] [1] [INFO] Oxygen Not Included Together: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:38.446] [1] [INFO] Subscribe to mod Oxygen Not Included Together
+[10:21:38.446] [1] [INFO] 	Installing mod: Oxygen Not Included Together
+[10:21:38.503] [1] [INFO] 	Successfully installed.
+[10:21:38.507] [1] [INFO] 	Blueprints Expanded has a mod.yaml with a staticID `BlueprintsV2`, using that from now on.
+[10:21:38.511] [1] [INFO] Blueprints Expanded: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:38.511] [1] [INFO] Subscribe to mod Blueprints Expanded
+[10:21:38.511] [1] [INFO] 	Installing mod: Blueprints Expanded
+[10:21:38.838] [1] [INFO] 	Successfully installed.
+[10:21:38.842] [1] [INFO] 	Duplicant Stat Selector [DSS] has a mod.yaml with a staticID `SetStartDupes`, using that from now on.
+[10:21:38.846] [1] [INFO] Duplicant Stat Selector [DSS]: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:38.846] [1] [INFO] Subscribe to mod Duplicant Stat Selector [DSS]
+[10:21:38.846] [1] [INFO] 	Installing mod: Duplicant Stat Selector [DSS]
+[10:21:39.053] [1] [INFO] 	Successfully installed.
+[10:21:39.058] [1] [INFO] 	Darkness Not Excluded Relit has a mod.yaml with a staticID `Duncanois.DarknessNotExcludedRelit`, using that from now on.
+[10:21:39.060] [1] [INFO] Darkness Not Excluded Relit: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:39.060] [1] [INFO] Subscribe to mod Darkness Not Excluded Relit
+[10:21:39.060] [1] [INFO] 	Installing mod: Darkness Not Excluded Relit
+[10:21:39.075] [1] [INFO] 	Successfully installed.
+[10:21:39.079] [1] [INFO] 	Dupery Fixed has a mod.yaml with a staticID `DuperyFixed`, using that from now on.
+[10:21:39.082] [1] [INFO] Dupery Fixed: Successfully loaded from path 'root' with content 'Strings, DLL, Animation'.
+[10:21:39.082] [1] [INFO] Subscribe to mod Dupery Fixed
+[10:21:39.082] [1] [INFO] 	Installing mod: Dupery Fixed
+[10:21:39.167] [1] [INFO] 	Successfully installed.
+[10:21:39.173] [1] [INFO] 	More Bionics has a mod.yaml with a staticID `print6bionics`, using that from now on.
+[10:21:39.176] [1] [INFO] More Bionics: Successfully loaded from path 'root' with content 'Strings, Animation'.
+[10:21:39.176] [1] [INFO] Subscribe to mod More Bionics
+[10:21:39.176] [1] [INFO] 	Installing mod: More Bionics
+[10:21:39.278] [1] [INFO] 	Successfully installed.
+[10:21:39.282] [1] [INFO] 	Bionic_Overclock has a mod.yaml with a staticID `Bionic_Overclock`, using that from now on.
+[10:21:39.287] [1] [INFO] Bionic_Overclock: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:39.287] [1] [INFO] Subscribe to mod Bionic_Overclock
+[10:21:39.287] [1] [INFO] 	Installing mod: Bionic_Overclock
+[10:21:39.305] [1] [INFO] 	Successfully installed.
+[10:21:39.310] [1] [INFO] 	Athletic Manual Generator has a mod.yaml with a staticID `Sanchozz.ONIMods.AthleticsGenerator`, using that from now on.
+[10:21:39.311] [1] [INFO] Athletic Manual Generator: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:39.311] [1] [INFO] Subscribe to mod Athletic Manual Generator
+[10:21:39.311] [1] [INFO] 	Installing mod: Athletic Manual Generator
+[10:21:39.370] [1] [INFO] 	Successfully installed.
+[10:21:39.374] [1] [INFO] 	Airlock Door has a mod.yaml with a staticID `PeterHan.AirlockDoor`, using that from now on.
+[10:21:39.375] [1] [INFO] Airlock Door: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:39.375] [1] [INFO] Subscribe to mod Airlock Door
+[10:21:39.375] [1] [INFO] 	Installing mod: Airlock Door
+[10:21:39.420] [1] [INFO] 	Successfully installed.
+[10:21:39.424] [1] [INFO] 	Darkness Not Excluded has a mod.yaml with a staticID `nevir.DarknessNotExcluded`, using that from now on.
+[10:21:39.425] [1] [INFO] Darkness Not Excluded: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:39.425] [1] [INFO] Subscribe to mod Darkness Not Excluded
+[10:21:39.425] [1] [INFO] 	Installing mod: Darkness Not Excluded
+[10:21:39.440] [1] [INFO] 	Successfully installed.
+[10:21:39.444] [1] [INFO] 	Demolior Story Trait has a mod.yaml with a staticID `DemoliorStoryTrait`, using that from now on.
+[10:21:39.445] [1] [INFO] Demolior Story Trait: Successfully loaded from path 'root' with content 'LayerableFiles, DLL'.
+[10:21:39.445] [1] [INFO] Subscribe to mod Demolior Story Trait
+[10:21:39.445] [1] [INFO] 	Installing mod: Demolior Story Trait
+[10:21:39.567] [1] [INFO] 	Successfully installed.
+[10:21:39.570] [1] [INFO] 	Insulated Radbolt Joint Plate has a mod.yaml with a staticID `Sanchozz.ONIMods.HEPBridgeInsulationTile`, using that from now on.
+[10:21:39.571] [1] [INFO] Insulated Radbolt Joint Plate: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:39.571] [1] [INFO] Subscribe to mod Insulated Radbolt Joint Plate
+[10:21:39.571] [1] [INFO] 	Installing mod: Insulated Radbolt Joint Plate
+[10:21:39.604] [1] [INFO] 	Successfully installed.
+[10:21:39.613] [1] [INFO] Insulated Door: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:39.613] [1] [INFO] Subscribe to mod Insulated Door
+[10:21:39.613] [1] [INFO] 	Installing mod: Insulated Door
+[10:21:39.722] [1] [INFO] 	Successfully installed.
+[10:21:39.729] [1] [INFO] DownloadFailed - Skipping installing mod 'Expanded Lights'
+(https://steamcommunity.com/sharedfiles/filedetails/?id=1871382174)
+'E:\SteamLibrary\steamapps\workshop\content\457140\1871382174\5122313230622392734_legacy.bin'
+[10:21:39.730] [1] [INFO] Reporting error.
+
+[10:21:39.730] [1] [INFO] DevNotification: DownloadFailed
+[10:21:39.730] [1] [INFO]   at System.Environment.get_StackTrace () [0x00000] in <41d29b352f6a475ab1bf7c6628b82790>:0 
+  at KMod.Steam.MakeModAndReportOutcome (SteamUGCService+Mod subscribed) [0x00000] in <f977a24581804c14a3d841c1a71ed35d>:0 
+  at KMod.Steam.UpdateMods (System.Collections.Generic.IEnumerable`1[T] added, System.Collections.Generic.IEnumerable`1[T] updated, System.Collections.Generic.IEnumerable`1[T] removed, System.Collections.Generic.IEnumerable`1[T] loaded_previews) [0x00000] in <f977a24581804c14a3d841c1a71ed35d>:0 
+  at SteamUGCService.Update () [0x00000] in <f977a24581804c14a3d841c1a71ed35d>:0 
+[10:21:39.800] [1] [INFO] 	Remote Work NOT Supported has a mod.yaml with a staticID `remote_work`, using that from now on.
+[10:21:39.801] [1] [INFO] Remote Work NOT Supported: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:39.801] [1] [INFO] Subscribe to mod Remote Work NOT Supported
+[10:21:39.801] [1] [INFO] 	Installing mod: Remote Work NOT Supported
+[10:21:39.820] [1] [INFO] 	Successfully installed.
+[10:21:39.823] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3523317587\16509237071470702993_legacy.bin\mod.yaml
+Found a property 'name' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:39.824] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3523317587\16509237071470702993_legacy.bin\mod.yaml
+Found a property 'version' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:39.824] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3523317587\16509237071470702993_legacy.bin\mod.yaml
+Found a property 'author' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:39.824] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3523317587\16509237071470702993_legacy.bin\mod.yaml
+Found a property 'assembly' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:39.824] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3523317587\16509237071470702993_legacy.bin\mod.yaml
+Found a property 'entry_class' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:39.824] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3523317587\16509237071470702993_legacy.bin\mod.yaml
+Found a property 'name' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:39.824] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3523317587\16509237071470702993_legacy.bin\mod.yaml
+Found a property 'version' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:39.824] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3523317587\16509237071470702993_legacy.bin\mod.yaml
+Found a property 'author' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:39.824] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3523317587\16509237071470702993_legacy.bin\mod.yaml
+Found a property 'assembly' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:39.824] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\3523317587\16509237071470702993_legacy.bin\mod.yaml
+Found a property 'entry_class' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:39.826] [1] [INFO] Trapdoors & Floor Hatches Revived: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:39.827] [1] [INFO] Subscribe to mod Trapdoors & Floor Hatches Revived
+[10:21:39.827] [1] [INFO] 	Installing mod: Trapdoors & Floor Hatches Revived
+[10:21:39.849] [1] [INFO] 	Successfully installed.
+[10:21:39.853] [1] [INFO] 	Skilled Enough has a mod.yaml with a staticID `airenelias.SkilledEnough`, using that from now on.
+[10:21:39.855] [1] [INFO] Skilled Enough: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:39.855] [1] [INFO] Subscribe to mod Skilled Enough
+[10:21:39.855] [1] [INFO] 	Installing mod: Skilled Enough
+[10:21:39.872] [1] [INFO] 	Successfully installed.
+[10:21:39.875] [1] [INFO] 	Random Clothes has a mod.yaml with a staticID `MauroJunior.RandomCloth`, using that from now on.
+[10:21:39.877] [1] [INFO] Random Clothes: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:39.877] [1] [INFO] Subscribe to mod Random Clothes
+[10:21:39.877] [1] [INFO] 	Installing mod: Random Clothes
+[10:21:39.896] [1] [INFO] 	Successfully installed.
+[10:21:39.907] [1] [INFO] 	[Vanilla + DLC] Diseases Expanded has a mod.yaml with a staticID `pether-pg.DiseasesExpanded`, using that from now on.
+[10:21:39.945] [1] [INFO] [Vanilla + DLC] Diseases Expanded: Successfully loaded from path 'root' with content 'LayerableFiles, DLL, Animation'.
+[10:21:39.946] [1] [INFO] Subscribe to mod [Vanilla + DLC] Diseases Expanded
+[10:21:39.946] [1] [INFO] 	Installing mod: [Vanilla + DLC] Diseases Expanded
+[10:21:41.449] [1] [INFO] 	Successfully installed.
+[10:21:41.453] [1] [INFO] 	Darkness Not Excluded (fixed) has a mod.yaml with a staticID `nevir.DarknessNotExcluded`, using that from now on.
+[10:21:41.454] [1] [INFO] Darkness Not Excluded (fixed): Successfully loaded from path 'root' with content 'DLL'.
+[10:21:41.454] [1] [INFO] Subscribe to mod Darkness Not Excluded (fixed)
+[10:21:41.454] [1] [INFO] 	Installing mod: Darkness Not Excluded (fixed)
+[10:21:41.466] [1] [INFO] 	Successfully installed.
+[10:21:41.469] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\2002421412\16394380225908341032_legacy.bin\mod.yaml
+Found a property '﻿title' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:41.470] [1] [WARNING] Recoverable parse error in E:\SteamLibrary\steamapps\workshop\content\457140\2002421412\16394380225908341032_legacy.bin\mod.yaml
+Found a property '﻿title' on a type 'KMod.KModHeader', but that type doesn't have that property!
+[10:21:41.470] [1] [INFO] 	Customizable Speed has a mod.yaml with a staticID `CustomizableSpeed`, using that from now on.
+[10:21:41.472] [1] [INFO] Customizable Speed: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:41.472] [1] [INFO] Subscribe to mod Customizable Speed
+[10:21:41.472] [1] [INFO] 	Installing mod: Customizable Speed
+[10:21:41.491] [1] [INFO] 	Successfully installed.
+[10:21:41.497] [1] [INFO] Insulated Joint Plate [FIXED]: Successfully loaded from path 'root' with content 'DLL, Animation'.
+[10:21:41.497] [1] [INFO] Subscribe to mod Insulated Joint Plate [FIXED]
+[10:21:41.497] [1] [INFO] 	Installing mod: Insulated Joint Plate [FIXED]
+[10:21:41.573] [1] [INFO] 	Successfully installed.
+[10:21:41.582] [1] [INFO] 	Mod Updater has a mod.yaml with a staticID `PeterHan.ModUpdateDate`, using that from now on.
+[10:21:41.584] [1] [INFO] Mod Updater: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:41.584] [1] [INFO] Subscribe to mod Mod Updater
+[10:21:41.584] [1] [INFO] 	Installing mod: Mod Updater
+[10:21:41.601] [1] [INFO] 	Successfully installed.
+[10:21:41.607] [1] [INFO] 	Blueprints fixed has a mod.yaml with a staticID `Blueprints`, using that from now on.
+[10:21:41.609] [1] [INFO] Blueprints fixed: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:41.609] [1] [INFO] Subscribe to mod Blueprints fixed
+[10:21:41.609] [1] [INFO] 	Installing mod: Blueprints fixed
+[10:21:41.644] [1] [INFO] 	Successfully installed.
+[10:21:41.648] [1] [INFO] 	Warning Notification Manager has a mod.yaml with a staticID `SGTIM_NotificationManager`, using that from now on.
+[10:21:41.651] [1] [INFO] Warning Notification Manager: Successfully loaded from path 'root' with content 'DLL'.
+[10:21:41.651] [1] [INFO] Subscribe to mod Warning Notification Manager
+[10:21:41.651] [1] [INFO] 	Installing mod: Warning Notification Manager
+[10:21:41.710] [1] [INFO] 	Successfully installed.
+[10:21:41.719] [1] [INFO] 	Natural Backwalls Everywhere has a mod.yaml with a staticID `Isochronous.NaturalBackwallsEverywhere`, using that from now on.
+[10:21:41.721] [1] [INFO] Natural Backwalls Everywhere: Successfully loaded from path 'root' with content 'LayerableFiles, DLL'.
+[10:21:41.721] [1] [INFO] Subscribe to mod Natural Backwalls Everywhere
+[10:21:41.721] [1] [INFO] 	Installing mod: Natural Backwalls Everywhere
+[10:21:41.773] [1] [INFO] 	Successfully installed.
+[10:21:41.817] [1] [INFO] Submitting crash...
+Submitted crash!
+[10:22:57.104] [1] [INFO] Restarting
+	exe (E:\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded.exe)
+	full (E:\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded.exe)
+	dir (E:\SteamLibrary\steamapps\common\OxygenNotIncluded)
+[10:22:57.105] [1] [INFO] Restarter arguments: "E:\SteamLibrary\steamapps\common\OxygenNotIncluded\OxygenNotIncluded.exe"
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.

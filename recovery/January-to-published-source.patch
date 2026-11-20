@@ -1,0 +1,32 @@
+diff --git a/src/features/InGameConfig/DarknessToggleButton.cs b/src/features/InGameConfig/DarknessToggleButton.cs
+index f8dc462..2f7a65f 100644
+--- a/src/features/InGameConfig/DarknessToggleButton.cs
++++ b/src/features/InGameConfig/DarknessToggleButton.cs
+@@ -1,14 +1,13 @@
+ using HarmonyLib;
+ using UnityEngine;
+ using PeterHan.PLib.UI;
+-using STRINGS;
+ 
+ namespace DarknessNotIncluded.InGameConfig
+ {
+   static class DarknessToggleButton
+   {
+-    static LocString DARKNESS_ACTIVE_TOOLTIP = $"<style=\"consumed\">Disable Darkness</style>\n\nGetting to be a little too much? It's ok, we won't judge you …too much.\n\n{UI.PRE_KEYWORD}Right-click to view <b>Darkness Not Excluded</b> options{UI.PST_KEYWORD}";
+-    static LocString DARKNESS_DISABLED_TOOLTIP = $"<style=\"produced\">Re-Enable Darkness</style>\n\nAh! Welcome back to the challenge.\n\n{UI.PRE_KEYWORD}Right-click to view <b>Darkness Not Excluded</b> options{UI.PST_KEYWORD}";
++    static LocString DARKNESS_ACTIVE_TOOLTIP = "<style=\"consumed\">Disable Darkness</style>\n\nGetting to be a little too much? It's ok, we won't judge you ...too much.";
++    static LocString DARKNESS_DISABLED_TOOLTIP = "<style=\"produced\">Re-Enable Darkness</style>\n\nAh! Welcome back to the challenge.";
+ 
+     [HarmonyPatch(typeof(TopLeftControlScreen)), HarmonyPatch("OnActivate")]
+     static class Patched_TopLeftControlScreen_OnActivate
+@@ -32,10 +31,6 @@ namespace DarknessNotIncluded.InGameConfig
+             {
+               ToggleDarkness(kButton);
+             }
+-            else if (btn == KKeyCode.Mouse1)
+-            {
+-              OptionsEnhancements.OptionsDialog.Show<Config>(typeof(Config), (config) => Config.Set(config));
+-            }
+           };
+         });
+         button.AddTo(___secondaryRow.gameObject);

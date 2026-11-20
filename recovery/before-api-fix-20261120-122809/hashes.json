@@ -1,0 +1,18 @@
+[
+  {
+    "Path": "project.csproj",
+    "Hash": "6005BB1D8EF32FCDB629337AEEB589C727F673E58AA20DC8DDAE65A13FD0F769"
+  },
+  {
+    "Path": "mod.yaml",
+    "Hash": "0906B39A49E97C94AA03EB8187DD1576567BE87710AFCF7D386B819DA00D8E68"
+  },
+  {
+    "Path": "src\\features\\InGameConfig\\DarknessToggleButton.cs",
+    "Hash": "918E1A15675271D156A44E579A250F26062660BDD24D5B8DCB330AFC4FED0776"
+  },
+  {
+    "Path": "src\\features\\Plants\\IlluminationVulnerableSupportsMaxLux.cs",
+    "Hash": "667F9A675F62E30E3C1F1C137A6FBA9A34442FBAA91845CA7E97EE6BBE35C51E"
+  }
+]
